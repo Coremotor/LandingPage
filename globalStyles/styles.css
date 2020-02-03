@@ -12,8 +12,7 @@ body {
   min-width: 320px; /*определение минимальной ширины */
   margin: 0;/*обнуление внешних отступов у элементов*/
   background-color: white;/*определение цвета фона*/
-  font-family: "Arial MT",sans-serif;/*определение шрифта*/
-  font-size: 16px;/*размер шрифта*/
+  font-family: "Roboto";/*определение шрифта*/
   line-height: normal;/*интерлиньяж (межстрочный интервал) текста*/
   color: #000;/*цвет текста*/
 }
@@ -55,7 +54,7 @@ a {
 }
 
 .conteiner {
-  max-width: 1920px;
+  width: 1920px;
   margin: auto;
 }
 
