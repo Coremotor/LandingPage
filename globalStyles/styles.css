@@ -47,12 +47,6 @@ a {
   overflow: hidden;
 }
 
-.clearFix::after { /*решение проблемы флоатов*/
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .conteiner {
   width: 1920px;
   margin: auto;
