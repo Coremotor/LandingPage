@@ -13,6 +13,8 @@ body {
   margin: 0;/*обнуление внешних отступов у элементов*/
   background-color: white;/*определение цвета фона*/
   font-family: "Roboto";/*определение шрифта*/
+  font-size: 16px;
+  font-weight: 400;
   line-height: normal;/*интерлиньяж (межстрочный интервал) текста*/
   color: #000;/*цвет текста*/
 }
@@ -28,6 +30,7 @@ img {
 a {
   text-decoration: none;/*убирает оформление ссылок*/
   color: inherit;/*наследование цвета текста*/
+  cursor: pointer;
 }
 
 .list-style-reset {
@@ -48,7 +51,7 @@ a {
 }
 
 .conteiner {
-  width: 1920px;
+  max-width: 1170px;
   margin: auto;
 }
 

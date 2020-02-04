@@ -1,0 +1,13 @@
+.menu__item_header {
+  margin-right: 34px;
+  border-bottom: 1px solid transparent;
+}
+
+.menu__item_header:hover {
+  color: #fc557c;
+  border-bottom: 1px solid #fc557c;
+}
+
+.menu__item_header:last-child {
+  margin-right: 0;
+}

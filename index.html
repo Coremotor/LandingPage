@@ -8,9 +8,19 @@
   <link rel="stylesheet" href="/globalStyles/fonts.css">
   <link rel="stylesheet" href="/globalStyles/styles.css">
   <link rel="stylesheet" href="/header/header.css">
-  <link rel="stylesheet" href="/header-menu-contacts-bar/header-menu-contacts-bar.css">
-  <link rel="stylesheet" href="/about-developer/about-developer.css">
-  <link rel="stylesheet" href="/foto-developer/foto-developer.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/header-menu-contacts-bar.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/menu/menu.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/menu/_menu_header/menu_header.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/menu/__menu__item/_menu__item_header/menu__item_header.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/menu/__menu__list/menu__list.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/menu/__menu__item/menu__item.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/link-on-phohe-number/link-on-phohe-number.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/link-on-phohe-number/_link-on-phohe-number_header/link-on-phohe-number_header.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/btn/btn.css">
+  <link rel="stylesheet" href="/header/header-menu-contacts-bar/btn/_btn_header/btn_header.css">
+  <link rel="stylesheet" href="/header/header-about-developer/header-about-developer.css">
+  <link rel="stylesheet" href="/header/header-about-developer/about-developer/about-developer.css">
+  <link rel="stylesheet" href="/header/header-about-developer/foto-developer/foto-developer.css">
 
   <!-- Блок favIcon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/favIkon/apple-icon-57x57.png">
@@ -22,7 +32,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/favIkon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/favIkon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favIkon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/favIkon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favIkon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favIkon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/favIkon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favIkon/favicon-16x16.png">
@@ -36,25 +46,41 @@
 </head>
 
 <body>
-  <header class="header conteiner">
-    <div class="header-menu-contacts-bar">
-      <nav class="menu">
+  <header class="header">
+    <div class="header-menu-contacts-bar conteiner">
+      <nav class="menu menu_header">
         <ul class="menu__list list-style-reset">
-          <li class="menu__item">Услуги</li>
-          <li class="menu__item">Портфолио</li>
-          <li class="menu__item">Стоимость</li>
+          <li class="menu__item menu__item_header">
+            <a href="#">Услуги</a>
+          </li>
+          
+          <li class="menu__item menu__item_header">
+            <a href="#">Портфолио</a>
+          </li>
+
+          <li class="menu__item menu__item_header">
+            <a href="#">Стоимость</a>
+          </li>
         </ul>
       </nav>
       
-      <a class="link-on-phohe-number" href="tel: +7-499-995-55-77">+7 (499) 995-55-77</a>
+      <a class="link-on-phohe-number link-on-phohe-number_header" href="tel: +7-499-995-55-77">+7 (499) 995-55-77</a>
 
-      <button class="btn">Заказать звонок</button>
+      <button class="btn btn_header">Заказать звонок</button>
     </div>
 
-    <section class="about-developer"></section>
+    <div class="header-about-developer">
+      <section class="about-developer">
+        <h1>Дмитрий Алексеев</h1>
+        <p>Frontend-разработчик и веб-верстальщик</p>
+        <button class="btn">Узнать больше</button>
 
-    <div class="foto-developer">
-      <picture></picture>
+
+      </section>
+
+      <div class="foto-developer">
+        <picture></picture>
+      </div>
     </div>
   </header>  
 </body>
