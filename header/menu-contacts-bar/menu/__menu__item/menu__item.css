@@ -1,0 +1,7 @@
+.menu__item_header {
+  margin-right: 34px;
+}
+
+.menu__item_header:last-child {
+  margin-right: 0;
+}
