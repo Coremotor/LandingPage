@@ -5,35 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="globalStyles/normalize.css">
-  <link rel="stylesheet" href="globalStyles/fonts.css">
-  <link rel="stylesheet" href="globalStyles/styles.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
   <!-- Описание стилей для блоков, элементов, модификаторов в ХЭДЕРЕ -->
-  <link rel="stylesheet" href="header/header.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/menu-contacts-bar.css">
-  <link rel="stylesheet" href="header/__header__menu-contacts-bar/header__menu-contacts-bar.css">
-
-  <link rel="stylesheet" href="header/menu-contacts-bar/menu/menu.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/__menu-contacts-bar__menu/menu-contacts-bar__menu.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/menu/__menu__list/menu__list.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/menu/__menu__item/menu__item.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/menu/__menu__item/_type/menu__item_header.css">
-
-  <link rel="stylesheet" href="header/menu-contacts-bar/phohe-number/phohe-number.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/phohe-number/_type/phone-number_type-big.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/__menu-contacts-bar__phone-number/menu-contacts-bar__phone-number.css">
-
-  <link rel="stylesheet" href="header/menu-contacts-bar/btn/btn.css">
-  <link rel="stylesheet" href="header/menu-contacts-bar/btn/_type/btn_type-bg-transparent.css">
-  
-  <link rel="stylesheet" href="header/__header__about-developer/header__about-developer.css">
-  <link rel="stylesheet" href="header/about-developer/about-developer.css">
-  <link rel="stylesheet" href="header/about-developer/developer-foto/developer-foto.css">
-  <link rel="stylesheet" href="header/about-developer/__about-developer__developer-foto/about-developer__developer-foto.css">
-  <link rel="stylesheet" href="header/about-developer/developer-info/developer-info.css">
-  <link rel="stylesheet" href="header/about-developer/__about-developer__developer-info/about-developer_developer-info.css">
-
+  <link rel="stylesheet" href="styles/header.css">
   <!-- Конец описания стилей для блоков, элементов, модификаторов в ХЭДЕРЕ -->
 
   <!-- Блок favIcon -->
@@ -60,41 +37,20 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="menu-contacts-bar header__menu-contacts-bar conteiner">
-      <nav class="menu menu-contacts-bar__menu">
-        <ul class="menu__list list-style-reset">
-          <li class="menu__item menu__item_header">
-            <a href="#">Услуги</a>
-          </li>
-          
-          <li class="menu__item menu__item_header">
-            <a href="#">Портфолио</a>
-          </li>
-
-          <li class="menu__item menu__item_header">
-            <a href="#">Стоимость</a>
-          </li>
-        </ul>
+  
+  <header class="header header_bg">
+    <div class="header__inner container">
+      <nav class="menu header__menu">
+        <a class="menu__item" href="#">Услуги</a>
+        <a class="menu__item" href="#">Портфолио</a>
+        <a class="menu__item" href="#">Стоимость</a>
       </nav>
-      
-      <a class="phohe-number menu-contacts-bar__phone-number phone-number_type-big" href="tel: +7-499-995-55-77">+7 (499) 995-55-77</a>
 
-      <button class="btn btn_type-bg-transparent">Заказать звонок</button>
+      <a class="phone header__phone" href="tel:+7-499-995-55-77">+7(499)995-55-77</a>
+
+      <button class="btn">Заказать звонок</button>
     </div>
-
-    <div class="about-developer header__about-developer">
-      <section class="developer-info about-developer__developer-info">
-        <h1>Дмитрий Алексеев</h1>
-        <p>Frontend-разработчик и веб-верстальщик</p>
-        <button class="btn">Узнать больше</button>
-      </section>
-
-      <div class="developer-foto about-developer__developer-foto">
-        <picture></picture>
-      </div>
-
-    </div>
-  </header>  
+  </header>
+  
 </body>
 </html>
