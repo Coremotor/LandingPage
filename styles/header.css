@@ -1,47 +1,41 @@
+.header {
+  background-color: #fbfbfb;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
-  padding: 30px 0 20px;
+  padding: 30px 0 65px;
   
-}
-
-.header_bg {
-  background-color: #fbfbfb;
 }
 
 .header__menu {
   flex-grow: 1;
-}
-
-.menu {
   color: #1f1f24;
 }
 
-.menu__item {
+.header__menu-item {
   margin-right: 28px;
   border-bottom: 1px solid transparent;
 }
 
-.menu__item:hover {
+.header__menu-item:hover {
   color: #fc557c;
   border-bottom: 1px solid #fc557c;
 }
 
-.menu__item:last-child {
+.header__menu-item:last-child {
   margin-right: 0;
 }
 
-.phone {
+.header__phone {
   font-size: 25px;
   font-weight: 700;
   color: #1f1f24;
-}
-
-.header__phone {
   margin-right: 30px;
 }
 
-.btn {
+.header__btn {
   color: #f53f4f;
   padding: 14px 40px;
   background-color: transparent;
