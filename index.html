@@ -11,15 +11,18 @@
 
   <!-- Описание стилей для блоков, элементов, модификаторов в блоке header -->
   <link rel="stylesheet" href="styles/header.css">
-  <!-- Конец описания стилей для блоков, элементов, модификаторов в блоке header -->
-
+ 
   <!-- Описание стилей для блоков, элементов, модификаторов в блоке about-developer -->
   <link rel="stylesheet" href="styles/about-developer.css">
-  <!-- Конец описания стилей для блоков, элементов, модификаторов в блоке about-developer -->
 
   <!-- Описание стилей для блоков, элементов, модификаторов в блоке direction-of-development -->
   <link rel="stylesheet" href="styles/direction-of-development.css">
-  <!-- Конец описания стилей для блоков, элементов, модификаторов в блоке direction-of-development -->
+
+  <!-- Описание стилей для блоков, элементов, модификаторов в блоке example-projects -->
+  <link rel="stylesheet" href="styles/example-projects.css">
+
+  <!-- Описание стилей для блоков, элементов, модификаторов в блоке carousel -->
+  <link rel="stylesheet" href="styles/carousel.css">
 
   <!-- Блок favIcon -->
   <link rel="apple-touch-icon" sizes="57x57" href="favIkon/apple-icon-57x57.png">
@@ -81,28 +84,56 @@
     <h2 class="direction-of-development__title">Что я делаю</h2>
 
     <div class="direction-of-development__inner">
-      <div class="direction-of-development__skill">
+      <a class="direction-of-development__skill href="#"">
         <img src="/img/skill_img_landing.png" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-        <p class="direction-of-development__about-skill">Вёрстка лендинг–страниц и сайтов любой сложности</p>
-      </div>
+        <span class="direction-of-development__text">Вёрстка лендинг–страниц и сайтов любой сложности</span>
+      </a>
     
-      <div class="direction-of-development__skill">
+      <a class="direction-of-development__skill href="#"">
         <img src="/img/skill_img_responsive.png" alt="Адаптивная вёрстка под все браузеры и устройства">
-        <p class="direction-of-development__about-skill">Адаптивная вёрстка под все браузеры и устройства</p>
-      </div>
+        <span class="direction-of-development__text">Адаптивная вёрстка под все браузеры и устройства</span>
+      </a>
 
-      <div class="direction-of-development__skill">
+      <a class="direction-of-development__skill href="#"">
         <img src="/img/skill_img_frontend.png" alt="Frontend–разработка и программирование">
-        <p class="direction-of-development__about-skill">Frontend–разработка и программирование</p>
-      </div>
+        <span class="direction-of-development__text">Frontend–разработка и программирование</span>
+      </a>
 
-      <div class="direction-of-development__skill">
+      <a class="direction-of-development__skill href="#"">
         <img src="/img/skill_img_coding.png" alt="Исправление и доработка существующей вёрстки">
-        <p class="direction-of-development__about-skill">Исправление и доработка существующей вёрстки</p>
-      </div>
+        <span class="direction-of-development__text">Исправление и доработка существующей вёрстки</span>
+      </a>
     </div>
 
-    <button class="btn direction-of-development__btn">Узнать стоимость</button>
+    <button class="btn">Узнать стоимость</button>
+  </section>
+
+  <section class="example-projects">
+    <h2 class="example-projects__title">Примеры моих работ</h2>
+
+    <div class="carousel example-projects__carousel">
+      <button class="carousel__left-btn"></button>
+      
+      <a href="" class="carousel__item">
+        <img src="img/project-psychology.png" alt="Сайт психолога Веры Антоновой">
+        <span class="carousel__text">Сайт психолога Веры Антоновой</span>
+      </a>
+
+      <a href="" class="carousel__item">
+        <img src="img/project-child-clothes-store.png" alt="Сайт магазина детской одежды">
+        <span class="carousel__text">Сайт магазина детской одежды</span>
+      </a>
+
+      <a href="" class="carousel__item">
+        <img src="img/project-fishman-store.png" alt="Сайт магазина «Рыболов»">
+        <span class="carousel__text">Сайт магазина «Рыболов»</span>
+      </a>
+
+      <button class="carousel__right-btn"></button>
+    </div>
+
+    <button class="btn">Заказать проект</button>
+
   </section>
   
 </body>

@@ -7,7 +7,6 @@
 }
 
 .direction-of-development__title {
-  text-align: center;
   font-size: 54px;
   font-weight: 700;
   color: #262626;
@@ -25,13 +24,9 @@
   align-items: center;
 }
 
-.direction-of-development__about-skill {
+.direction-of-development__text {
   font-size: 20px;
   font-weight: 400;
   color: #8993ad;
   text-align: center;
-}
-
-.direction-of-development__btn {
-  
 }
