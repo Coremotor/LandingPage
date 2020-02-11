@@ -25,23 +25,58 @@
   font-size: 25px;
 }
 
+.footer__icon-phone {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer__icon-mail {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 .footer__phone {
   margin-bottom: 34px;
 }
-
-
 
 .footer__btn {
   color: #f53f4f;
   padding: 16px 62px;
   background-color: transparent;
   border: 1px solid #f53f4f;
+  margin-bottom: 30px;
 }
 
+.footer__social-networks {
+  display: flex;
+}
 
+.footer__network-link {
+  display: block;
+  width: 35px;
+  height: 30px;
+  background-image: url("/img/sprite.png");
+  margin-right: 30px;
+}
+.footer__network-link:last-child {
+  margin-bottom: 0;
+}
 
+.footer__network-link_VK {
+  background-position: -14px -10px;
+}
 
+.footer__network-link_FB {
+  background-position: -69px -10px;
+}
 
+.footer__network-link_Twit {
+  background-position: -123px -10px;
+}
+
+.footer__network-link_Insta {
+  background-position: -178px -10px;
+}
 
 .copyright {
   display: flex;
