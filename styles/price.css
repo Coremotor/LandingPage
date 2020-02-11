@@ -1,0 +1,22 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+  background-image: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 73%);
+  padding: 86px 0;
+}
+
+.price__title {
+  max-width: 942px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.price__text {
+  max-width: 755px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}

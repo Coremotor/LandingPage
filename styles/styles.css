@@ -32,6 +32,9 @@ a {
   color: inherit;/*наследование цвета текста*/
   cursor: pointer;
 }
+button {
+  cursor: pointer;
+}
 
 .list-style-reset {
   padding: 0;

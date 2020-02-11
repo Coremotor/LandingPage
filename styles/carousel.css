@@ -2,25 +2,44 @@
   display: flex;
 }
 
-.carousel__left-btn {
+.carousel__btn {
   align-self: center;
-  width: 60px;
-  height: 60px;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
   background-image: url("/img/arrow.png");
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.07);
   border: none;
   border-radius: 50%;
+  margin-right: -25px;
+  margin-top: -50px;
+  padding: 0;
+}
+
+.carousel__btn_rotate_180 {
+  transform: rotate(180deg);
+}
+
+.carousel__btn_rotate_180 {
+  margin-left: -50px;
 }
 
 .carousel__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 30px;
+}
+
+.carousel__item:last-child {
+  margin: 0;
 }
 
 .carousel__text {
   font-size: 20px;
   font-weight: 400;
   color: #8993ad;
+  margin-top: 38px;
 }
