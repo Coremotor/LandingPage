@@ -13,21 +13,53 @@
   margin: 0 0 93px 0;
 }
 
-.direction-of-development__inner {
+.direction-of-development__list-skills {
   display: flex;
   margin-bottom: 96px;
 }
 
-.direction-of-development__skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.direction-of-development__text {
+.direction-of-development__skill-item {
   font-size: 20px;
   color: #8993ad;
   text-align: center;
-  margin-top: 24px;
 }
+
+.direction-of-development__link-layout {
+  display: block;
+  background-image: url("/img/skill_img_landing.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 90px;
+}
+
+.direction-of-development__link-adaptive {
+  display: block;
+  background-image: url("/img/skill_img_responsive.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 90px;
+}
+
+.direction-of-development__link-front {
+  display: block;
+  background-image: url("/img/skill_img_frontend.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 90px;
+}
+
+.direction-of-development__link-correction {
+  display: block;
+  background-image: url("/img/skill_img_coding.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 90px;
+}
+
+
+
+/* 
+/img/skill_img_landing.png
+/img/skill_img_responsive.png
+/img/skill_img_frontend.png
+/img/skill_img_coding.png */

@@ -25,18 +25,21 @@
   font-size: 25px;
 }
 
-.footer__icon-phone {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.footer__icon-mail {
-  font-size: 18px;
-  margin-right: 10px;
-}
 
 .footer__phone {
+  background-image: url("/img/icon-phone.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 35px;
   margin-bottom: 34px;
+}
+
+.footer__email {
+  background-image: url("/img/icon-mail.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+
 }
 
 .footer__btn {

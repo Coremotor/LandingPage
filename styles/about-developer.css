@@ -16,14 +16,15 @@
   font-size: 80px;
   font-weight: 900;
   color: #1f1f24;
-  margin: 0 0 22px 0;
+  margin: 0;
 }
 
 .developer-info__skills {
+  display: block;
   font-size: 25px;
   font-weight: 400;
   color: #8993ad;
-  margin: 0 0 46px 0;
+  margin: 22px 0 46px 0;
 }
 
 .btn {
