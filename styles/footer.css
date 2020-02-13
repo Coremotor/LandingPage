@@ -85,6 +85,7 @@
   display: flex;
   background-color: #31293c;
   padding: 32px 0;
+  margin: 0;
 }
 
 .copyright__text {

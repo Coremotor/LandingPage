@@ -34,7 +34,7 @@
         <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-        <button class="header__btn">Заказать звонок</button>
+        <button class="header__btn" type="button">Заказать звонок</button>
       </div>  
     </div>
   </header>
@@ -47,7 +47,7 @@
         </h1>
 
         <!-- Переход на другую страницу с более подробной информацией о разработчике -->
-        <button class="btn developer-info__btn">Узнать больше</button>
+        <button class="btn developer-info__btn" type="button">Узнать больше</button>
       </div>
     </div>
 
@@ -82,7 +82,7 @@
     </ul>
 
     <!-- Переход на другую страницу с более подробной информацией по ценам   -->
-    <button class="btn">Узнать стоимость</button>
+    <button class="btn" type="button">Узнать стоимость</button>
   </section>
 
   <section class="example-projects">
@@ -91,11 +91,11 @@
     <div class="carousel example-projects__carousel">
       <ul class="carousel__list list-style-reset ">
         <li>
-          <button class="carousel__btn"></button>
+          <button class="carousel__btn" type="button" aria-label="Кнопка перемотки влево"></button>
         </li>
 
         <li>
-          <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position"></button>
+          <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Кнопка перемотки вправо"></button>
         </li>
       </ul>
 
@@ -126,12 +126,14 @@
     <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-    <button class="btn">Заказать проект</button>
+    <button class="btn" type="button">Заказать проект</button>
   </section>
 
   <section class="price">
-    <h2 class="price__title">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
-    <p class="price__text">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</p>
+    <h2 class="visually-hidden">Расценки</h2>
+    <p class="price__text">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*
+      <small class="price__small-text">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</small>
+    </p>
   </section>
 
   <footer class="footer">
@@ -152,19 +154,30 @@
         <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-        <button class="footer__btn">Заказать звонок</button>
-        <div class="footer__social-networks">
-          <a href="#" class="footer__network-link footer__network-link_VK"></a>
-          <a href="#" class="footer__network-link footer__network-link_FB"></a>
-          <a href="#" class="footer__network-link footer__network-link_Twit"></a>
-          <a href="#" class="footer__network-link footer__network-link_Insta"></a>
-        </div>
+        <button class="footer__btn" type="button">Заказать звонок</button>
+        <ul class="footer__social-networks list-style-reset">
+          <li>
+            <a href="#" class="footer__network-link footer__network-link_VK" aria-label="Вконтакте"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer__network-link footer__network-link_FB" aria-label="Фэйсбук"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer__network-link footer__network-link_Twit" aria-label="Твиттер"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer__network-link footer__network-link_Insta" aria-label="Инстаграм"></a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <div class="copyright">
-      <span class="copyright__text">© Дмитрий Алексеев, 2016 – 2018</span>
-    </div>
+    <p class="copyright">
+      <small class="copyright__text">© Дмитрий Алексеев, 2016 – 2018</small>
+    </p>
   </footer>
 </body>
 </html>

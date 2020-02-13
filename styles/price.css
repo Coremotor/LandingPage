@@ -7,16 +7,19 @@
   padding: 86px 0;
 }
 
-.price__title {
+.price__text {
   max-width: 942px;
   font-size: 45px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
 }
 
-.price__text {
+.price__small-text {
+  display: block;
   max-width: 755px;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+  margin-top: 40px;
 }
