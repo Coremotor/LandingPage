@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2 as="font"> <!--Говорим браузеру как можно скорее загрузить и кэшировать ресурс-->
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2 as="font">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2 as="font">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2 as="font">
+  
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/styles.css">
@@ -89,38 +94,44 @@
     <h2 class="example-projects__title">Примеры моих работ</h2>
 
     <div class="carousel example-projects__carousel">
-      <ul class="carousel__list list-style-reset ">
+      <ul class="carousel__btn-list list-style-reset">
         <li>
-          <button class="carousel__btn" type="button" aria-label="Кнопка перемотки влево"></button>
+          <button class="carousel__btn" type="button" aria-label="Перемотка влево"></button>
         </li>
 
         <li>
-          <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Кнопка перемотки вправо"></button>
+          <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Перемотка вправо"></button>
         </li>
       </ul>
 
-      <figure class="carousel__item">
-        <a href="#">
-          <img src="img/project-psychology.png" alt="Сайт психолога Веры Антоновой">          
-        </a>
-        <figcaption class="carousel__text">Сайт психолога Веры Антоновой</figcaption>
-      </figure>
+      <ul class="carousel__list list-style-reset">
+        <li class="carousel__item">
+          <figure>
+            <a href="#">
+              <img src="img/project-psychology.png" alt="Сайт психолога Веры Антоновой">
+              <figcaption class="carousel__text">Сайт психолога Веры Антоновой</figcaption>        
+            </a>        
+          </figure>
+        </li>
 
-      <figure class="carousel__item">
-        <a href="#">
-          <img src="img/project-child-clothes-store.png" alt="Сайт магазина детской одежды">
-        </a>
+        <li class="carousel__item">
+          <figure>
+            <a href="#">
+              <img src="img/project-child-clothes-store.png" alt="Сайт магазина детской одежды">
+              <figcaption class="carousel__text">Сайт магазина детской одежды</figcaption>
+            </a>
+          </figure>
+        </li>
 
-        <figcaption class="carousel__text">Сайт магазина детской одежды</figcaption>
-      </figure>
-
-      <figure class="carousel__item">
-        <a href="#">
-          <img src="img/project-fishman-store.png" alt="Сайт магазина «Рыболов»">          
-        </a>
-
-        <figcaption class="carousel__text">Сайт магазина «Рыболов»</figcaption>
-      </figure>      
+        <li class="carousel__item">
+          <figure>
+            <a href="#">
+              <img src="img/project-fishman-store.png" alt="Сайт магазина «Рыболов»">
+              <figcaption class="carousel__text">Сайт магазина «Рыболов»</figcaption>         
+            </a>        
+          </figure>
+        </li>
+      </ul>   
     </div>
 
     <!-- Всплывающее окно с информацией о клиенте 
@@ -130,10 +141,14 @@
   </section>
 
   <section class="price">
-    <h2 class="visually-hidden">Расценки</h2>
-    <p class="price__text">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*
-      <small class="price__small-text">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</small>
-    </p>
+    <div class="price__inner container">
+      <h2 class="visually-hidden">Расценки</h2>
+      <p class="price__text">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</p>
+
+      <p class="price__small-text">
+        <small>* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</small>
+      </p>
+    </div>
   </section>
 
   <footer class="footer">
@@ -157,19 +172,19 @@
         <button class="footer__btn" type="button">Заказать звонок</button>
         <ul class="footer__social-networks list-style-reset">
           <li>
-            <a href="#" class="footer__network-link footer__network-link_VK" aria-label="Вконтакте"></a>
+            <a href="#" class="footer__network-link footer__network-link_VK" aria-label="Личная страница Вконтакте"></a>
           </li>
 
           <li>
-            <a href="#" class="footer__network-link footer__network-link_FB" aria-label="Фэйсбук"></a>
+            <a href="#" class="footer__network-link footer__network-link_FB" aria-label="Личная страница на Фэйсбук"></a>
           </li>
 
           <li>
-            <a href="#" class="footer__network-link footer__network-link_Twit" aria-label="Твиттер"></a>
+            <a href="#" class="footer__network-link footer__network-link_Twit" aria-label="Личная страница Твиттер"></a>
           </li>
 
           <li>
-            <a href="#" class="footer__network-link footer__network-link_Insta" aria-label="Инстаграм"></a>
+            <a href="#" class="footer__network-link footer__network-link_Insta" aria-label="Личная страница в Инстаграм"></a>
           </li>
         </ul>
       </div>

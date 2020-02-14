@@ -36,6 +36,10 @@ button {
   cursor: pointer;
 }
 
+figure {
+  margin: 0;
+}
+
 .list-style-reset {
   padding: 0;
   margin: 0;
