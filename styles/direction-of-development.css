@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 99px;
+  padding-top: 77px;
   padding-bottom: 103px;
 }
 
@@ -55,11 +55,3 @@
   background-position: center top;
   padding-top: 90px;
 }
-
-
-
-/* 
-/img/skill_img_landing.png
-/img/skill_img_responsive.png
-/img/skill_img_frontend.png
-/img/skill_img_coding.png */

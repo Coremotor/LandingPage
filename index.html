@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2 as="font"> <!--Говорим браузеру как можно скорее загрузить и кэшировать ресурс-->
-  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2 as="font">
-  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2 as="font">
-  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2 as="font">
+  <link rel="preload" href="fonts/roboto-400.woff2" as="font"> <!--Говорим браузеру как можно скорее загрузить и кэшировать ресурс-->
+  <link rel="preload" href="fonts/roboto-500.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-700.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-900.woff2" as="font">
   
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/container.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/about-developer.css">
   <link rel="stylesheet" href="styles/direction-of-development.css">
@@ -28,8 +29,8 @@
   <header class="header">
     <div class="header__inner container">
       <nav class="header__menu">
-        <a class="header__menu-item" href="#">Портфолио</a>
         <a class="header__menu-item" href="#">Услуги</a>
+        <a class="header__menu-item" href="#">Портфолио</a>
         <a class="header__menu-item" href="#">Стоимость</a>
       </nav>
 
@@ -106,30 +107,33 @@
 
       <ul class="carousel__list list-style-reset">
         <li class="carousel__item">
-          <figure>
-            <a href="#">
+          <a href="#">
+            <figure>
               <img src="img/project-psychology.png" alt="Сайт психолога Веры Антоновой">
+              
               <figcaption class="carousel__text">Сайт психолога Веры Антоновой</figcaption>        
-            </a>        
-          </figure>
+            </figure>
+          </a>         
         </li>
 
         <li class="carousel__item">
-          <figure>
-            <a href="#">
+          <a href="#">
+            <figure>
               <img src="img/project-child-clothes-store.png" alt="Сайт магазина детской одежды">
+              
               <figcaption class="carousel__text">Сайт магазина детской одежды</figcaption>
-            </a>
-          </figure>
+            </figure>
+          </a>
         </li>
 
         <li class="carousel__item">
-          <figure>
-            <a href="#">
+          <a href="#">
+            <figure>
               <img src="img/project-fishman-store.png" alt="Сайт магазина «Рыболов»">
-              <figcaption class="carousel__text">Сайт магазина «Рыболов»</figcaption>         
-            </a>        
-          </figure>
+
+              <figcaption class="carousel__text">Сайт магазина «Рыболов»</figcaption>
+            </figure>        
+          </a>        
         </li>
       </ul>   
     </div>
