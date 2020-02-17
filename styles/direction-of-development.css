@@ -26,7 +26,7 @@
 
 .direction-of-development__link-layout {
   display: block;
-  background-image: url("/img/skill_img_landing.png");
+  background-image: url("../img/skill_img_landing.png");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 90px;
@@ -34,7 +34,7 @@
 
 .direction-of-development__link-adaptive {
   display: block;
-  background-image: url("/img/skill_img_responsive.png");
+  background-image: url("../img/skill_img_responsive.png");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 90px;
@@ -42,7 +42,7 @@
 
 .direction-of-development__link-front {
   display: block;
-  background-image: url("/img/skill_img_frontend.png");
+  background-image: url("../img/skill_img_frontend.png");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 90px;
@@ -50,7 +50,7 @@
 
 .direction-of-development__link-correction {
   display: block;
-  background-image: url("/img/skill_img_coding.png");
+  background-image: url("../img/skill_img_coding.png");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 90px;

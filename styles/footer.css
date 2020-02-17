@@ -27,7 +27,7 @@
 
 
 .footer__phone {
-  background-image: url("/img/icon-phone.png");
+  background-image: url("../img/icon-phone.png");
   background-position: left;
   background-repeat: no-repeat;
   padding-left: 35px;
@@ -35,7 +35,7 @@
 }
 
 .footer__email {
-  background-image: url("/img/icon-mail.png");
+  background-image: url("../img/icon-mail.png");
   background-position: left;
   background-repeat: no-repeat;
   padding-left: 35px;
@@ -58,7 +58,7 @@
   display: block;
   width: 35px;
   height: 30px;
-  background-image: url("/img/sprite.png");
+  background-image: url("../img/sprite.png");
   margin-right: 30px;
 }
 .footer__network-link:last-child {

@@ -38,7 +38,7 @@
 
 .developer-foto {
   width: 813px;
-  background-image: url("/img/developer-foto-bg.png");
+  background-image: url("../img/developer-foto-bg.png");
   background-repeat: no-repeat;
   background-position: bottom;
 
