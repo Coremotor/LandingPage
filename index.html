@@ -111,9 +111,19 @@
         <li class="carousel__item">
           <a href="#">
             <figure>
-              <img src="img/project-psychology.png" alt="Сайт психолога Веры Антоновой">
-              
-              <figcaption class="carousel__text">Сайт психолога Веры Антоновой</figcaption>        
+              <picture>
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                  img/project_psychology_tablet.png 1x,
+                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+
+                <img src="img/project-psychology.png"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  alt="Сайт психолога Веры Антоновой">
+              </picture>
+
+              <figcaption class="carousel__text">Сайт психолога Веры Антоновой</figcaption>
             </figure>
           </a>         
         </li>
@@ -121,8 +131,18 @@
         <li class="carousel__item">
           <a href="#">
             <figure>
-              <img src="img/project-child-clothes-store.png" alt="Сайт магазина детской одежды">
-              
+              <picture>
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                  img/project_child_clothes_store_tablet.png 1x,
+                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+
+                <img src="img/project-child-clothes-store.png"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  alt="Сайт магазина детской одежды">
+              </picture>
+
               <figcaption class="carousel__text">Сайт магазина детской одежды</figcaption>
             </figure>
           </a>
@@ -131,7 +151,17 @@
         <li class="carousel__item">
           <a href="#">
             <figure>
-              <img src="img/project-fishman-store.png" alt="Сайт магазина «Рыболов»">
+              <picture>
+                <source
+                media="(max-width: 1200px)"
+                srcset="
+                img/project-fishman-store.png 1x,
+                https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+
+                <img src="img/project-fishman-store.png"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  alt="Сайт магазина «Рыболов»">
+              </picture>
 
               <figcaption class="carousel__text">Сайт магазина «Рыболов»</figcaption>
             </figure>        
@@ -140,15 +170,15 @@
       </ul>  
       
       <ul class="carousel__btn-slider-list list-style-reset">
-        <li>
+        <li class="carousel__btn-slider-item">
           <button class="carousel__btn-slider"></button>
         </li>
 
-        <li>
+        <li class="carousel__btn-slider-item">
           <button class="carousel__btn-slider"></button>
         </li>
 
-        <li>
+        <li class="carousel__btn-slider-item">
           <button class="carousel__btn-slider"></button>
         </li>
       </ul>

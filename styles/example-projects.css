@@ -16,5 +16,15 @@
 }
 
 .example-projects__carousel {
-  margin-bottom: 95px;
+  margin-bottom: 97px;
 }
+
+
+@media(max-width: 1200px) {
+  .example-projects {
+    width: 1024px;
+    margin: auto;
+  }
+
+}
+

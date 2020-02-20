@@ -61,6 +61,11 @@
 
 
 @media(max-width: 1200px) {
+  .header {
+    width: 1024px;
+    margin: auto;
+  }
+
   .header__inner {
     padding-left: 40px;
     padding-right: 27px;

@@ -94,3 +94,20 @@
   font-size: 16px;
   color: #ffffff;
 }
+
+
+@media(max-width: 1200px) {
+  .footer {
+    width: 1024px;
+    margin: auto;
+  }
+
+  .footer__inner {
+    padding: 106px 30px 80px 40px;
+  }
+
+  .footer__menu {
+    margin-right: 39px;
+  }
+
+}
