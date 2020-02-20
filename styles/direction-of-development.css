@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 77px;
+  padding-top: 84px;
   padding-bottom: 103px;
 }
 
@@ -10,15 +10,17 @@
   font-size: 54px;
   font-weight: 700;
   color: #262626;
-  margin: 0 0 93px 0;
+  margin: 0 0 89px 0;
 }
 
 .direction-of-development__list-skills {
   display: flex;
-  margin-bottom: 96px;
+  margin-bottom: 102px;
+  justify-content: space-between;
 }
 
 .direction-of-development__skill-item {
+  width: 260px;
   font-size: 20px;
   color: #8993ad;
   text-align: center;
@@ -29,7 +31,7 @@
   background-image: url("../img/skill_img_landing.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 90px;
+  padding-top: 93px;
 }
 
 .direction-of-development__link-adaptive {
@@ -37,7 +39,7 @@
   background-image: url("../img/skill_img_responsive.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 90px;
+  padding-top: 93px;
 }
 
 .direction-of-development__link-front {
@@ -45,7 +47,7 @@
   background-image: url("../img/skill_img_frontend.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 90px;
+  padding-top: 93px;
 }
 
 .direction-of-development__link-correction {
@@ -53,5 +55,26 @@
   background-image: url("../img/skill_img_coding.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 90px;
+  padding-top: 93px;
+}
+
+
+
+
+@media(max-width: 1200px) {
+
+  .direction-of-development__title {
+    margin-right: 27px;
+  }
+
+  .direction-of-development__list-skills {
+    flex-wrap: wrap;
+    padding: 0 150px 0;
+  }
+
+  .direction-of-development__skill-item:first-child {
+    margin-bottom: 90px;
+  }
+
+
 }

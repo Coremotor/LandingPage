@@ -5,10 +5,14 @@
   margin: auto;
 }
 
+.developer-info__inner {
+  margin-right: 6px;
+}
+
 .developer-info {
   display: flex;
   justify-content: flex-end;
-  padding-top: 148px;
+  padding-top: 144px;
   flex-grow: 1;
 }
 
@@ -16,7 +20,7 @@
   font-size: 80px;
   font-weight: 900;
   color: #1f1f24;
-  margin: 0;
+  margin: 0 0 45px 0;
 }
 
 .developer-info__skills {
@@ -24,7 +28,7 @@
   font-size: 25px;
   font-weight: 400;
   color: #8993ad;
-  margin: 14px 0 42px 0;
+  margin: 14px 0 0 0;
 }
 
 .btn {
@@ -33,17 +37,40 @@
   color: #ffffff;
   background-color: #ff4e2e;
   padding: 20px 60px;
-  
 }
 
-.developer-foto {
-  width: 813px;
+.developer-info__btn {
+  padding: 20px 71px;
+}
+
+.developer-foto {  
   background-image: url("../img/developer-foto-bg.png");
   background-repeat: no-repeat;
   background-position: bottom;
-
+  padding: 0 297px 0 84px;
 }
 
 .foto {
-  margin-left: 84px;
+  margin-top: -12px;
+}
+
+
+
+@media(max-width: 1200px) {
+  .about-developer {
+    width: 1024px;        
+  }
+
+  .btn {
+    padding: 24px 84px;
+  }
+
+  .developer-foto {
+    background-image: url("../img/developer-foto-bg-tablet.png");
+    padding: 221px 184px 0 84px;  
+  }
+
+  .foto {
+   
+  }
 }
