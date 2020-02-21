@@ -107,3 +107,41 @@
     margin-right: 0;
   }
 }
+
+
+
+@media(max-width: 1024px) {
+
+  .carousel__list {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .carousel__item {
+    padding: 0 19px 0;
+
+  }
+
+  .carousel__item:first-child {
+    display: none;
+  }
+
+  .carousel__text {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+
+  .carousel__btn-slider-item {
+    margin-right: 16px;
+  }
+
+  .carousel__btn-slider {
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel__btn-slider:last-child {
+    margin-right: 0;
+  }
+
+}

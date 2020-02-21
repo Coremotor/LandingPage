@@ -61,7 +61,7 @@
     width: 1024px;        
   }
 
-  .btn {
+  .developer-info__btn {
     padding: 24px 84px;
   }
 
@@ -72,5 +72,49 @@
 
   .foto {
    
+  }
+}
+
+
+
+@media(max-width: 1024px) {
+  .about-developer {
+  width: 320px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+  .developer-foto {
+    width: 320px;
+    background-image: url("../img/developer-foto-bg-mobile.png");
+    padding: 90px 0px 0px 77px;  
+  }
+
+  .developer-info {
+    padding-top: 12px;
+  }
+
+  .developer-info__btn {
+    padding: 17px 76px;
+  }
+
+  .developer-info__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .developer-info__title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 24px 0;
+  }
+
+  .developer-info__skills {
+    font-size: 16px;
+    margin: 8px 0 0 0;
+    padding: 0 10px 0;
+    line-height: 1.5;
   }
 }

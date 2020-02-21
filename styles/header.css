@@ -84,19 +84,44 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 1024px) {
 
+  .header {
+    width: 320px;
+    margin: auto;
+  }
+
+  .header__inner {
+    padding: 26px 20px 0px 20px;
+  }
+
+  .header__menu-btn {
+    width: 24px;
+    height: 18px;
+    background-image: url("../img/menu-btn-mobile.png");
+  }
+
+  .header__phone-btn-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .header__phone {
+    font-size: 18px;
+  }
+
+  .header__btn {
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/btn-call-order.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    
+  }
+
 }
+
+

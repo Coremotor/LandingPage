@@ -42,7 +42,7 @@
         <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-        <button class="header__btn" type="button">Заказать звонок</button>
+        <button class="header__btn" type="button"><!--Заказать звонок--></button>
       </div>  
     </div>
   </header>
@@ -61,8 +61,15 @@
 
     <div class="developer-foto">
       <picture>
+        <source
+          media="(max-width: 1024px)"
+          srcset="
+          img/developer-foto-mobile.png 1x,
+          https://via.placeholder.com/448x668.png/0000FF/FFFFFF/?text=448x668+png+2x 2x">
+
         <img class="foto" 
-        src="img/developer-foto.png" 
+        src="img/developer-foto.png"
+        srcset="https://via.placeholder.com/870x1274.png/0000FF/FFFFFF/?text=870x1274+png+2x 2x"
         alt="Фото разработчика">
       </picture>
     </div>
@@ -113,13 +120,19 @@
             <figure>
               <picture>
                 <source
+                  media="(max-width: 1024px)"
+                  srcset="
+                  https://via.placeholder.com/282x251.png/0000FF/FFFFFF/?text=psih+455x358+png+1x 1x,
+                  https://via.placeholder.com/564x502.png/0000FF/FFFFFF/?text=psih+564x502+png+2x 2x">
+
+                <source
                   media="(max-width: 1200px)"
                   srcset="
                   img/project_psychology_tablet.png 1x,
-                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=psih+910x716+png+2x 2x">
 
                 <img src="img/project-psychology.png"
-                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=psih+740x580+png+2x 2x"
                   alt="Сайт психолога Веры Антоновой">
               </picture>
 
@@ -133,13 +146,19 @@
             <figure>
               <picture>
                 <source
+                  media="(max-width: 1024px)"
+                  srcset="
+                  img/project-child-clothes-store-mobile.png 1x,
+                  https://via.placeholder.com/564x502.png/0000FF/FFFFFF/?text=child+564x502+png+2x 2x">
+
+                <source
                   media="(max-width: 1200px)"
                   srcset="
                   img/project_child_clothes_store_tablet.png 1x,
-                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=child+910x716+png+2x 2x">
 
                 <img src="img/project-child-clothes-store.png"
-                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=child+740x580+png+2x 2x"
                   alt="Сайт магазина детской одежды">
               </picture>
 
@@ -153,13 +172,19 @@
             <figure>
               <picture>
                 <source
-                media="(max-width: 1200px)"
-                srcset="
-                img/project-fishman-store.png 1x,
-                https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=910x716+png+2x 2x">
+                  media="(max-width: 1024px)"
+                  srcset="
+                  https://via.placeholder.com/282x251.png/0000FF/FFFFFF/?text=fish+455x358+png+1x 1x,
+                  https://via.placeholder.com/564x502.png/0000FF/FFFFFF/?text=fish+564x502+png+2x 2x">
+
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="
+                  https://via.placeholder.com/455x358.png/0000FF/FFFFFF/?text=fish+455x358+png+1x 1x,
+                  https://via.placeholder.com/910x716.png/0000FF/FFFFFF/?text=fish+910x716+png+2x 2x">
 
                 <img src="img/project-fishman-store.png"
-                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=740x580+png+2x 2x"
+                  srcset="https://via.placeholder.com/740x580.png/0000FF/FFFFFF/?text=fish+740x580+png+2x 2x"
                   alt="Сайт магазина «Рыболов»">
               </picture>
 

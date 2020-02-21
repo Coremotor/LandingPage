@@ -33,3 +33,28 @@
     padding: 76px 40px 90px 40px;
   }
 }
+
+
+
+@media (max-width: 1024px) {
+  .price__inner {
+    padding: 44px 0px 48px 20px;
+  }
+
+  .price {
+    width: 320px;
+    margin: auto;
+  }
+
+  .price__text {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 37px;
+  }
+
+  .price__small-text {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-right: 0;
+  }
+}

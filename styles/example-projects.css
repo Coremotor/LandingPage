@@ -28,3 +28,25 @@
 
 }
 
+
+
+
+@media(max-width: 1024px) {
+
+  .example-projects {
+    width: 320px;
+    padding-bottom: 48px;
+    margin: auto;
+}
+
+  .example-projects__title {
+    font-size: 30px;
+    padding: 0 10px 0;
+    margin: 0 0 38px 0;
+  }
+
+  .example-projects__carousel {
+    margin-bottom: 42px;
+}
+
+}
