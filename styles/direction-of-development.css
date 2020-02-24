@@ -1,7 +1,6 @@
 .direction-of-development {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 84px;
   padding-bottom: 103px;
 }
@@ -10,7 +9,7 @@
   font-size: 54px;
   font-weight: 700;
   color: #262626;
-  margin: 0 0 89px 0;
+  margin: 0 auto 89px;
 }
 
 .direction-of-development__list-skills {
@@ -58,22 +57,27 @@
   padding-top: 93px;
 }
 
+.direction-of-development__btn {
+  margin: auto;
+}
+
 
 
 
 @media(max-width: 1200px) {
 
-  .direction-of-development__title {
-    margin-right: 27px;
-  }
-
   .direction-of-development__list-skills {
     flex-wrap: wrap;
     padding: 0 150px 0;
+    margin-bottom: 99px;
   }
 
   .direction-of-development__skill-item:first-child {
     margin-bottom: 90px;
+  }
+
+  .direction-of-development__btn {
+    padding: 24px 84px;
   }
 
 
@@ -83,12 +87,11 @@
 
   .direction-of-development {
     padding-top: 40px;
-    padding-bottom: 44px;
+    padding-bottom: 51px;
   }
 
   .direction-of-development__title {
     font-size: 30px;
-    margin-right: 0;
     margin-bottom: 46px;
   }
 
@@ -136,7 +139,11 @@
     background-image: url("../img/skill_img_coding_mobile.png");
     padding-top: 70px;
     line-height: 1.5;
+  }
 
+  .direction-of-development__btn {
+    padding: 18px 72px;
+    font-size: 16px;
   }
 
 }

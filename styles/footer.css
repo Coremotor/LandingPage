@@ -13,7 +13,7 @@
 .footer__menu-item {
   font-size: 18px;
   color: #8993ad;
-  margin-bottom: 16px;  
+  margin-bottom: 10px;  
 }
 
 .footer__menu-item:last-child {
@@ -103,11 +103,24 @@
   }
 
   .footer__inner {
-    padding: 106px 30px 80px 40px;
+    padding: 100px 39px 79px 40px;
   }
 
   .footer__menu {
+    margin-top: 6px;
     margin-right: 39px;
+  }
+
+  .footer__contacts {
+    margin-top: 6px;
+  }
+
+  .footer__btn {
+    padding: 13px 60px;
+  }
+
+  .copyright {
+    padding: 30px 0;
   }
 
 }
@@ -119,7 +132,7 @@
 
   .footer__inner {
     flex-direction: column;
-    padding: 46px 30px 80px 20px;
+    padding: 46px 20px 50px 20px;
   }
 
   .footer__menu {
@@ -134,10 +147,31 @@
   .footer__contacts {
     font-size: 20px;
     color: #8993ad;
+    margin-bottom: 22px;
   }
 
   .footer__phone {
-    margin-bottom: 23px;
+    background-image: url("../img/icon-phone-mobile.png");
+    margin-bottom: 25px;
+  }
+
+  .footer__email {
+    background-image: url("../img/icon-mail-mobile.png");
+  }
+
+  .footer__btn {
+    color: #ffffff;
+    background-color: #ff4e2e;
+    padding: 18px 76px;
+    margin-bottom: 47px;
+  }
+
+  .copyright {
+    padding: 19px 0;
+  }
+
+  .copyright__text {
+    font-size: 12px;
   }
 
 

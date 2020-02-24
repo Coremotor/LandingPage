@@ -30,7 +30,16 @@
   }
 
   .price__inner {
-    padding: 76px 40px 90px 40px;
+    padding: 76px 40px 83px 40px;
+  }
+
+  .price__text {
+    line-height: 1.3;
+    margin-bottom: 33px;
+  }
+
+  .price__small-text {
+    line-height: 1.4;
   }
 }
 

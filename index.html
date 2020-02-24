@@ -26,7 +26,7 @@
 </head>
 
 <body>  
-  <header class="header">
+  <header class="header js-header">
     <div class="header__inner container">
       <nav class="header__menu">
         <a class="header__menu-item" href="#">Услуги</a>
@@ -42,7 +42,7 @@
         <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-        <button class="header__btn" type="button"><!--Заказать звонок--></button>
+        <button class="header__btn js-header__btn" type="button">Заказать звонок</button>
       </div>  
     </div>
   </header>
@@ -97,7 +97,7 @@
     </ul>
 
     <!-- Переход на другую страницу с более подробной информацией по ценам   -->
-    <button class="btn" type="button">Узнать стоимость</button>
+    <button class="btn direction-of-development__btn" type="button">Узнать стоимость</button>
   </section>
 
   <section class="example-projects">
@@ -213,7 +213,7 @@
     <!-- Всплывающее окно с информацией о клиенте 
           (имя, телефон, email) 
           и кнопкой отправки формы на почту или сервер -->
-    <button class="btn" type="button">Заказать проект</button>
+    <button class="btn example-projects__btn" type="button">Заказать проект</button>
   </section>
 
   <section class="price">
@@ -270,5 +270,7 @@
       <small class="copyright__text">© Дмитрий Алексеев, 2016 – 2018</small>
     </p>
   </footer>
+
+  <script src="scripts/header.js"></script>
 </body>
 </html>

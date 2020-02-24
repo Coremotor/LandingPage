@@ -50,9 +50,6 @@
   padding: 0 297px 0 84px;
 }
 
-.foto {
-  margin-top: -12px;
-}
 
 
 
@@ -61,18 +58,32 @@
     width: 1024px;        
   }
 
+  .developer-info {
+    padding: 169px 0 0 39px;
+    justify-content: flex-start;
+  }
+
+  .developer-info__inner {
+    margin-right: 0;
+  }
+
+  .developer-info__title {
+    font-size: 54px;
+  }
+
+  .developer-info__skills {
+    margin-top: 20px;
+  }
+
   .developer-info__btn {
-    padding: 24px 84px;
+    padding: 24px 97px;
   }
 
   .developer-foto {
     background-image: url("../img/developer-foto-bg-tablet.png");
-    padding: 221px 184px 0 84px;  
+    padding: 0px 41px 0 0px;
   }
 
-  .foto {
-   
-  }
 }
 
 
@@ -92,6 +103,7 @@
 
   .developer-info {
     padding-top: 12px;
+    padding-left: 0;
   }
 
   .developer-info__btn {
@@ -108,7 +120,7 @@
   .developer-info__title {
     text-align: center;
     font-size: 30px;
-    margin: 0 0 24px 0;
+    margin: 0 0 22px 0;
   }
 
   .developer-info__skills {

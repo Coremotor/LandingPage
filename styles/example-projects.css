@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #fbfbfb;
   padding-top: 43px;
-  padding-bottom: 102px;
+  padding-bottom: 101px;
 }
 
 .example-projects__title {
@@ -26,6 +26,10 @@
     margin: auto;
   }
 
+  .example-projects__btn {
+    padding: 24px 90px;
+  }
+
 }
 
 
@@ -35,7 +39,7 @@
 
   .example-projects {
     width: 320px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     margin: auto;
 }
 
@@ -46,7 +50,10 @@
   }
 
   .example-projects__carousel {
-    margin-bottom: 42px;
-}
+    margin-bottom: 45px;
+  }
 
+  .example-projects__btn {
+    padding: 17px 70px;
+  }
 }
