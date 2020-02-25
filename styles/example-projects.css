@@ -1,4 +1,8 @@
 .example-projects {
+  background-color: #fbfbfb;
+}
+
+.example-projects__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,16 +24,14 @@
 }
 
 
+
+
 @media(max-width: 1200px) {
-  .example-projects {
-    width: 1024px;
-    margin: auto;
-  }
+
 
   .example-projects__btn {
     padding: 24px 90px;
   }
-
 }
 
 
@@ -38,9 +40,7 @@
 @media(max-width: 1024px) {
 
   .example-projects {
-    width: 320px;
     padding-bottom: 52px;
-    margin: auto;
 }
 
   .example-projects__title {

@@ -6,8 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 65px;
-  
+  padding: 30px 0 65px;  
 }
 
 .header__menu {
@@ -61,14 +60,8 @@
 
 
 @media(max-width: 1200px) {
-  .header {
-    width: 1024px;
-    margin: auto;
-  }
-
   .header__inner {
-    padding-left: 40px;
-    padding-right: 27px;
+    padding: 30px 27px 60px 40px;
   }
 
   .header__menu {
@@ -78,19 +71,12 @@
   .header__menu-btn {
     display: block;
   }
-
 }
 
 
 
 
 @media(max-width: 1024px) {
-
-  .header {
-    width: 320px;
-    margin: auto;
-  }
-
   .header__inner {
     padding: 26px 20px 0px 20px;
   }
@@ -100,7 +86,7 @@
     height: 18px;
     background-image: url("../img/menu-btn-mobile.png");
   }
-
+  
   .header__phone-btn-wrap {
     display: flex;
     align-items: center;
@@ -118,10 +104,12 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    padding: 0;
-    
+    padding: 0;    
   }
 
+  .header__btn-text {
+    display: none;
+  }
 }
 
 

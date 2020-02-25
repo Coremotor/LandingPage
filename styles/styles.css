@@ -11,7 +11,7 @@ html {
 body {
   min-width: 320px; /*определение минимальной ширины */
   margin: 0;/*обнуление внешних отступов у элементов*/
-  background-color: white;/*определение цвета фона*/
+  background-color: #ffffff;/*определение цвета фона*/
   font-family: "Roboto";/*определение шрифта*/
   font-size: 16px;
   font-weight: 400;

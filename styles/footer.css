@@ -1,7 +1,7 @@
 .footer__inner  {
   display: flex;
   justify-content: space-between;
-  padding: 80px 30px 78px 15px;
+  padding: 80px 30px 82px 15px;
 }
 
 .footer__menu {
@@ -26,7 +26,6 @@
   font-size: 25px;
 }
 
-
 .footer__phone {
   background-image: url("../img/icon-phone.png");
   background-position: left;
@@ -40,7 +39,6 @@
   background-position: left;
   background-repeat: no-repeat;
   padding-left: 35px;
-
 }
 
 .footer__btn {
@@ -62,6 +60,7 @@
   background-image: url("../img/sprite.png");
   margin-right: 18px;
 }
+
 .footer__network-link:last-child {
   margin-bottom: 0;
 }
@@ -96,6 +95,8 @@
 }
 
 
+
+
 @media(max-width: 1200px) {
   .footer {
     width: 1024px;
@@ -122,8 +123,11 @@
   .copyright {
     padding: 30px 0;
   }
-
 }
+
+
+
+
 
 @media (max-width: 1024px) {
   .footer {
@@ -173,6 +177,4 @@
   .copyright__text {
     font-size: 12px;
   }
-
-
 }
