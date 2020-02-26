@@ -3,7 +3,7 @@
 }
 
 .price__inner {
-  padding: 78px 129px 82px;
+  padding: 75px 129px 87px;
 }
 
 .price__text {
@@ -11,7 +11,7 @@
   font-weight: 700;
   line-height: 1.3;
   color: #ffffff;
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
 }
 
 .price__small-text {
@@ -43,7 +43,7 @@
 
 @media (max-width: 1024px) {
   .price__inner {
-    padding: 44px 0px 48px 20px;
+    padding: 42px 0px 50px 20px;
   }
 
   .price__text {

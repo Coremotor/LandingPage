@@ -8,7 +8,7 @@
   align-items: center;
   background-color: #fbfbfb;
   padding-top: 43px;
-  padding-bottom: 101px;
+  padding-bottom: 102px;
 }
 
 .example-projects__title {
@@ -22,11 +22,18 @@
   margin-bottom: 97px;
 }
 
+.example-projects__btn {
+  padding: 20px 65px;
+}
+
 
 
 
 @media(max-width: 1200px) {
 
+  .example-projects__inner {
+    padding: 47px 0 101px;
+  }
 
   .example-projects__btn {
     padding: 24px 90px;
@@ -38,11 +45,17 @@
 
 @media(max-width: 1024px) {
 
+  .example-projects__inner {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+
   .example-projects {
-    padding-bottom: 52px;
+    padding-bottom: 50px;
 }
 
   .example-projects__title {
+    text-align: center;
     font-size: 30px;
     padding: 0 10px 0;
     margin: 0 0 38px 0;
@@ -53,6 +66,7 @@
   }
 
   .example-projects__btn {
-    padding: 17px 70px;
+    font-size: 16px;
+    padding: 19px 78px;
   }
 }

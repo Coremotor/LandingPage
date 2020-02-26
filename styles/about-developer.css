@@ -57,8 +57,8 @@
 @media(max-width: 1900px) {
   .developer-foto {  
     margin-right: 0;
-
   }
+}
 
 @media(max-width: 1200px) {
   .about-developer {
@@ -69,11 +69,11 @@
   .about-developer__inner {
     background-image: url("../img/developer-foto-bg-tablet.png");
     background-repeat: no-repeat;
-    background-position: bottom right;   
+    background-position: bottom right;
   }
 
   .developer-info {
-    padding: 173px 0 0 0;
+    padding: 176px 0 0 0;
   }
 
   .developer-info__inner {
@@ -93,13 +93,18 @@
   }
 
   .developer-foto {
-    margin: -10px 0 0 0;
+    margin: -4px 0 0 0;
+  }
+
+  .foto {
+    margin-bottom: -4px;
   }
 }
 
 
 
 @media(max-width: 1024px) {
+
   .about-developer__inner {
     flex-direction: column-reverse;
     align-items: center;
@@ -111,7 +116,7 @@
     background-image: url("../img/developer-foto-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    padding: 90px 0px 0px 77px;  
+    padding: 86px 0px 0px 77px;  
   }
 
   .developer-info {
@@ -120,7 +125,8 @@
   }
 
   .developer-info__btn {
-    padding: 17px 76px;
+    font-size: 16px;
+    padding: 18px 83px;
   }
 
   .developer-info__inner {
@@ -133,7 +139,7 @@
   .developer-info__title {
     text-align: center;
     font-size: 30px;
-    margin: 0 0 22px 0;
+    margin: 0 0 23px 0;
   }
 
   .developer-info__skills {

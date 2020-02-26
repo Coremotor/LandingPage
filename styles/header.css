@@ -71,6 +71,10 @@
     display: none;
   }
 
+  .header__phone {
+    margin-top: -4px;
+  }
+
   .header__menu-btn {
     display: block;
   }
@@ -98,6 +102,7 @@
 
   .header__phone {
     font-size: 18px;
+    margin-top: 0;
   }
 
   .header__btn {
