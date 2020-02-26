@@ -9,28 +9,37 @@
   font-size: 54px;
   font-weight: 700;
   color: #262626;
-  margin: 0 auto 89px;
+  margin: 0 auto 88px;
 }
 
 .direction-of-development__list-skills {
   display: flex;
-  margin-bottom: 102px;
-  justify-content: space-between;
+  margin-bottom: 95px;
 }
 
 .direction-of-development__skill-item {
-  width: 260px;
+  width: 280px;
   font-size: 20px;
+  line-height: 1.4;
   color: #8993ad;
   text-align: center;
+}
+
+.direction-of-development__skill-item:first-child {
+  margin-right: 41px;
+}
+
+.direction-of-development__skill-item:nth-child(2) {
+  margin-right: 26px;
 }
 
 .direction-of-development__link-layout {
   display: block;
   background-image: url("../img/skill_img_landing.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 89px top;
   padding-top: 93px;
+  padding-right: 16px;
 }
 
 .direction-of-development__link-adaptive {
@@ -47,14 +56,17 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 93px;
+  padding-right: 37px;
+  padding-left: 35px;
 }
 
 .direction-of-development__link-correction {
   display: block;
   background-image: url("../img/skill_img_coding.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 116px top;
   padding-top: 93px;
+  padding-left: 29px;
 }
 
 .direction-of-development__btn {

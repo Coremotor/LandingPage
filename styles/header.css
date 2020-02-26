@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 65px;  
+  padding: 29px 0 65px;  
 }
 
 .header__menu {
@@ -39,21 +39,24 @@
 }
 
 .header__phone-btn-wrap {
-  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
 }
 
 .header__phone {
   font-size: 25px;
   font-weight: 700;
   color: #1f1f24;
-  margin-right: 30px;
+  margin-right: 26px;
+  letter-spacing: 1px;
 }
 
 .header__btn {
   color: #f53f4f;
-  padding: 14px 40px;
   background-color: transparent;
   border: 1px solid #f53f4f;
+  padding: 13px 40px;
 }
 
 

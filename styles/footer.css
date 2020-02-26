@@ -98,10 +98,6 @@
 
 
 @media(max-width: 1200px) {
-  .footer {
-    width: 1024px;
-    margin: auto;
-  }
 
   .footer__inner {
     padding: 100px 39px 79px 40px;
@@ -130,9 +126,6 @@
 
 
 @media (max-width: 1024px) {
-  .footer {
-    width: 320px;
-  }
 
   .footer__inner {
     flex-direction: column;

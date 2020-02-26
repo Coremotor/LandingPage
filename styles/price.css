@@ -24,10 +24,6 @@
 
 
 @media(max-width: 1200px) {
-  .price {
-    width: 1024px;
-    margin: auto;
-  }
 
   .price__inner {
     padding: 76px 40px 83px 40px;
@@ -48,11 +44,6 @@
 @media (max-width: 1024px) {
   .price__inner {
     padding: 44px 0px 48px 20px;
-  }
-
-  .price {
-    width: 320px;
-    margin: auto;
   }
 
   .price__text {

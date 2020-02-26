@@ -67,6 +67,28 @@
 
 
 
+
+
+
+@media(max-width: 1250px) {
+  .carousel__btn {
+    right: -63px;
+  }
+
+  .carousel__btn_position {
+    left: 1068px;
+  }
+
+  .carousel__item {
+    margin-right: 10px;
+  }
+
+}
+
+
+
+
+
 @media(max-width: 1200px) {
   .carousel__list {
     padding: 0 38px 0;
