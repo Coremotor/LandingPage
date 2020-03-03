@@ -1,3 +1,7 @@
+.footer {
+  border: 2px solid aqua;
+}
+
 .footer__inner  {
   display: flex;
   justify-content: space-between;
@@ -10,44 +14,11 @@
   margin-right: 88px;
 }
 
-.footer__menu-item {
-  font-size: 18px;
-  color: #8993ad;
-  margin-bottom: 10px;  
-}
-
-.footer__menu-item:last-child {
-  margin-bottom: 0;
-}
-
-.footer__contacts {
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-  font-style: normal;
-}
-
-.footer__phone {
-  letter-spacing: 1px;
-  background-image: url("../img/icon-phone.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-left: 35px;
-  margin-bottom: 29px;
-}
-
-.footer__email {
-  background-image: url("../img/icon-mail.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-left: 43px;
-}
-
 .footer__btn {
   color: #f53f4f;
   padding: 13px 57px 13px 62px ;
   background-color: transparent;
-  border: 1px solid #f53f4f;
+  /* border: 1px solid #f53f4f; */
   margin-bottom: 28px;
   margin-top: -6px;
 }
@@ -55,55 +26,6 @@
 .footer__wrap-in-footer {
   margin-right: 8px;
 }
-
-.footer__social-networks {
-  display: flex;
-}
-
-.footer__network-item-link {
-  margin-right: 20px;
-}
-
-.footer__network-item-link:last-child {
-  margin-right: 0;
-}
-
-.footer__network-link {
-  display: block;
-  width: 35px;
-  height: 30px;
-  background-image: url("../img/sprite.png");
-}
-
-.footer__network-link_VK {
-  background-position: -14px -10px;
-}
-
-.footer__network-link_FB {
-  background-position: -69px -10px;
-}
-
-.footer__network-link_Twit {
-  background-position: -123px -10px;
-}
-
-.footer__network-link_Insta {
-  background-position: -178px -10px;
-}
-
-.copyright {
-  display: flex;
-  background-color: #31293c;
-  padding: 29px 0;
-  margin: 0;
-}
-
-.copyright__text {
-  margin: auto;
-  font-size: 16px;
-  color: #ffffff;
-}
-
 
 
 
@@ -118,10 +40,6 @@
     margin-right: 52px;
   }
 
-  .footer__contacts {
-    margin-top: 6px;
-  }
-
   .footer__wrap-in-footer {
     margin-right: 0;
   }
@@ -129,10 +47,6 @@
   .footer__btn {
     margin-top: 0;
     padding: 13px 60px;
-  }
-
-  .copyright {
-    padding: 30px 0;
   }
 }
 
@@ -153,39 +67,10 @@
     margin-top: 0;
   }
 
-  .footer__menu-item {
-    font-size: 15px;
-    margin-bottom: 15px;
-  }
-
-  .footer__contacts {
-    font-size: 20px;
-    color: #8993ad;
-    margin: 0;
-    margin-bottom: 23px;
-  }
-
-  .footer__phone {
-    background-image: url("../img/icon-phone-mobile.png");
-    margin-bottom: 23px;
-  }
-
-  .footer__email {
-    background-image: url("../img/icon-mail-mobile.png");
-  }
-
   .footer__btn {
     color: #ffffff;
     background-color: #ff4e2e;
     padding: 18px 76px;
     margin-bottom: 47px;
-  }
-
-  .copyright {
-    padding: 19px 0;
-  }
-
-  .copyright__text {
-    font-size: 12px;
   }
 }

@@ -1,0 +1,37 @@
+.social-networks {
+  display: flex;
+
+
+  border: 2px solid royalblue;
+}
+
+.social-networks__network-item-link {
+  margin-right: 20px;
+}
+
+.social-networks__network-item-link:last-child {
+  margin-right: 0;
+}
+
+.social-networks__network-link {
+  display: block;
+  width: 35px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+}
+
+.social-networks__network-link_VK {
+  background-position: -14px -10px;
+}
+
+.social-networks__network-link_FB {
+  background-position: -69px -10px;
+}
+
+.social-networks__network-link_Twit {
+  background-position: -123px -10px;
+}
+
+.social-networks__network-link_Insta {
+  background-position: -178px -10px;
+}

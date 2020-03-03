@@ -3,6 +3,8 @@
   flex-direction: column;
   padding-top: 85px;
   padding-bottom: 107px;
+
+  border: 2px solid black;
 }
 
 .direction-of-development__title {
@@ -73,6 +75,7 @@
 }
 
 .direction-of-development__btn {
+  padding: 20px 60px;
   margin: auto;
 }
 

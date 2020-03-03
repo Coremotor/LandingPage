@@ -1,5 +1,7 @@
 .header {
   background-color: #fbfbfb;
+
+  border: 2px solid red;
 }
 
 .header__inner {
@@ -22,20 +24,6 @@
   border: none;
   display: none;
 
-}
-
-.header__menu-item {
-  margin-right: 28px;
-  border-bottom: 1px solid transparent;
-}
-
-.header__menu-item:hover {
-  color: #fc557c;
-  border-bottom: 1px solid #fc557c;
-}
-
-.header__menu-item:last-child {
-  margin-right: 0;
 }
 
 .header__phone-btn-wrap {

@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  background-color: #31293c;
+  padding: 29px 0;
+  margin: 0;
+
+  border: 2px solid brown;
+}
+
+.copyright__text {
+  margin: auto;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+@media(max-width: 1200px) {
+
+  .copyright {
+    padding: 30px 0;
+  }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .copyright {
+    padding: 19px 0;
+  }
+
+  .copyright__text {
+    font-size: 12px;
+  }
+}

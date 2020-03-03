@@ -1,0 +1,13 @@
+.btn {
+  color: #f53f4f;
+  background-color: transparent;
+  border: 2px solid blue;
+
+}
+
+.btn_orange {
+  font-size: 18px;
+  /* border: none; */
+  color: #ffffff;
+  background-color: #ff4e2e;
+}
