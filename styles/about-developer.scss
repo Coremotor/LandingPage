@@ -4,8 +4,6 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   margin-top: -12px;
-
-  border: 2px solid green;
 }
 
 .about-developer__inner {
@@ -39,7 +37,7 @@
   padding: 20px 71px;
 }
 
-.about-developer__developer-foto {  
+.about-developer__developer-foto {
   margin-right: -80px;
   margin-bottom: -4px;
   margin-top: 3px;
@@ -49,7 +47,7 @@
 
 
 @media(max-width: 1900px) {
-  .about-developer__developer-foto {  
+  .about-developer__developer-foto {
     margin-right: 0;
   }
 }
@@ -110,7 +108,7 @@
     background-image: url("../img/developer-foto-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    padding: 86px 0px 0px 77px;  
+    padding: 86px 0px 0px 77px;
   }
 
   .developer-info {
