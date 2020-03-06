@@ -4,16 +4,55 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   margin-top: -12px;
+
+  @media(max-width: 1200px) {
+    background-image: none;
+    margin-top: 0;
+  }
   
   &__inner {
     display: flex;
     margin: auto;
+
+    @media(max-width: 1200px) {
+      background-image: url("../img/developer-foto-bg-tablet.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
+
+    @media(max-width: 1024px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      background-image: none;
+    }
   }
     
   &__developer-foto {
     margin-right: -80px;
     margin-bottom: -4px;
     margin-top: 3px;
+
+    @media (max-width: 1900px) {
+      margin-right: 0;
+    }
+
+    @media(max-width: 1200px) {
+      margin: -4px 0 0 0;
+    }
+
+    @media(max-width: 1024px){
+      width: 320px;
+      background-image: url("../img/developer-foto-bg-mobile.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      padding: 86px 0px 0px 77px;
+    }
+  }
+
+  &__foto {
+    @media(max-width: 1200px) {
+      margin-bottom: -4px;
+    }
   }
 }
 
@@ -25,128 +64,74 @@
   padding-top: 158px;
   flex-grow: 1;
 
+  @media(max-width: 1200px) {
+    padding: 176px 0 0 0;
+  }
+
+  @media(max-width: 1024px) {
+    padding-top: 12px;
+    padding-left: 0;
+  }
+
+  &__inner {
+    @media(max-width: 1200px) {
+      margin-right: 0;
+    }
+
+    @media(max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+
   &__title {
     font-size: 80px;
     font-weight: 900;
-    color: #1f1f24;
+    color: $mainTextColor;
     margin: 0 0 45px 0;
+
+    @media(max-width: 1200px) {
+      font-size: 54px;
+    }
+
+    @media(max-width: 1024px) {
+      text-align: center;
+      font-size: 30px;
+      margin: 0 0 23px 0;
+    }
   }
 
   &__skills {
     display: block;
     font-size: 25px;
     font-weight: 400;
-    color: #8993ad;
+    color: $secondTextColor;
     margin: 14px 0 0 0;
+
+    @media(max-width: 1200px) {
+      margin-top: 20px;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 16px;
+      margin: 8px 0 0 0;
+      padding: 0 10px 0;
+      line-height: 1.5;
+    }
   }
 
   &__btn {
     padding: 20px 71px;
+
+    @media(max-width: 1200px) {
+      padding: 24px 97px;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 16px;
+      padding: 18px 83px;
+    }
   }  
-}
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 1900px) {
-  .about-developer__developer-foto {
-    margin-right: 0;
-  }
-}
-
-@media(max-width: 1200px) {
-  .about-developer {
-    background-image: none;
-    margin-top: 0;
-  }
-
-  .about-developer__inner {
-    background-image: url("../img/developer-foto-bg-tablet.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
-  .developer-info {
-    padding: 176px 0 0 0;
-  }
-
-  .developer-info__inner {
-    margin-right: 0;
-  }
-
-  .developer-info__title {
-    font-size: 54px;
-  }
-
-  .developer-info__skills {
-    margin-top: 20px;
-  }
-
-  .developer-info__btn {
-    padding: 24px 97px;
-  }
-
-  .about-developer__developer-foto {
-    margin: -4px 0 0 0;
-  }
-
-  .foto {
-    margin-bottom: -4px;
-  }
-}
-
-
-
-@media(max-width: 1024px) {
-
-  .about-developer__inner {
-    flex-direction: column-reverse;
-    align-items: center;
-    background-image: none;
-  }
-
-  .about-developer__developer-foto {
-    width: 320px;
-    background-image: url("../img/developer-foto-bg-mobile.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    padding: 86px 0px 0px 77px;
-  }
-
-  .developer-info {
-    padding-top: 12px;
-    padding-left: 0;
-  }
-
-  .developer-info__btn {
-    font-size: 16px;
-    padding: 18px 83px;
-  }
-
-  .developer-info__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-  }
-
-  .developer-info__title {
-    text-align: center;
-    font-size: 30px;
-    margin: 0 0 23px 0;
-  }
-
-  .developer-info__skills {
-    font-size: 16px;
-    margin: 8px 0 0 0;
-    padding: 0 10px 0;
-    line-height: 1.5;
-  }
 }
