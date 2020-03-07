@@ -1,11 +1,12 @@
 .btn {
-  color: #f53f4f;
-  background-color: transparent;
-  border: 1px solid #f53f4f;
+  color: $mainTextColorBtn;
+  background-color: $mainBgColorBtn;
+  border: 1px solid $mainBorderColorBtn;
+
+  &_orange {
+    border: none;
+    color: $secondTextColorBtn;
+    background-color: $secondBgColorBtn;
+  }
 }
 
-.btn_orange {
-  border: none;
-  color: #ffffff;
-  background-color: #ff4e2e;
-}
