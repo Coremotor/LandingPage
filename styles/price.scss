@@ -1,61 +1,51 @@
 .price {
   background-image: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 73%);
 
-}
+  &__inner {
+    padding: 75px 129px 87px;
 
-.price__inner {
-  padding: 75px 129px 87px;
-}
+    @media(max-width: 1200px) {
+      padding: 76px 40px 83px 40px;
+    }
 
-.price__text {
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.3;
-  color: #ffffff;
-  margin: 0 0 38px 0;
-}
-
-.price__small-text {
-  font-size: 20px;
-  color: #ffffff;
-  padding-right: 170px;
-  margin: 0;
-}
-
-
-
-@media(max-width: 1200px) {
-
-  .price__inner {
-    padding: 76px 40px 83px 40px;
+    @media (max-width: 1024px) {
+      padding: 42px 0 50px 20px;
+    }
   }
 
-  .price__text {
+  &__text {
+    font-size: 45px;
+    font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 33px;
+    color: $priceTextColor;
+    margin: 0 0 38px 0;
+
+    @media(max-width: 1200px) {
+      line-height: 1.3;
+      margin-bottom: 33px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 28px;
+      line-height: 1.4;
+      margin-bottom: 37px;
+    }
   }
 
-  .price__small-text {
-    line-height: 1.4;
-  }
-}
-
-
-
-@media (max-width: 1024px) {
-  .price__inner {
-    padding: 42px 0px 50px 20px;
-  }
-
-  .price__text {
-    font-size: 28px;
-    line-height: 1.4;
-    margin-bottom: 37px;
-  }
-
-  .price__small-text {
+  &__small-text {
     font-size: 20px;
-    line-height: 1.4;
-    padding-right: 0;
+    color: $priceTextColor;
+    padding-right: 170px;
+    margin: 0;
+
+    @media(max-width: 1200px) {
+      line-height: 1.4;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.4;
+      padding-right: 0;
+    }
   }
 }

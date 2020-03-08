@@ -1,71 +1,63 @@
-.footer__inner  {
-  display: flex;
-  justify-content: space-between;
-  padding: 83px 30px 81px 15px;
-}
+.footer {
 
-.footer__menu {
-  display: flex;
-  flex-direction: column;
-  margin-right: 88px;
-}
+  &__inner  {
+    display: flex;
+    justify-content: space-between;
+    padding: 83px 30px 81px 15px;
 
-.footer__btn {
-  color: #f53f4f;
-  padding: 13px 57px 13px 62px ;
-  background-color: transparent;
-  margin-bottom: 28px;
-  margin-top: -6px;
-}
+    @media(max-width: 1200px) {
+      padding: 100px 39px 81px 40px;
+    }
 
-.footer__wrap-in-footer {
-  margin-right: 8px;
-}
-
-
-
-@media(max-width: 1200px) {
-
-  .footer__inner {
-    padding: 100px 39px 81px 40px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      padding: 46px 20px 52px 20px;
+    }
   }
 
-  .footer__menu {
-    margin-top: 6px;
-    margin-right: 52px;
-  }
-
-  .footer__wrap-in-footer {
-    margin-right: 0;
-  }
-
-  .footer__btn {
-    margin-top: 0;
-    padding: 13px 60px;
-  }
-}
-
-
-
-
-
-@media (max-width: 1024px) {
-
-  .footer__inner {
+  &__menu {
+    display: flex;
     flex-direction: column;
-    padding: 46px 20px 52px 20px;
+    margin-right: 88px;
+
+    @media(max-width: 1200px) {
+      margin-top: 6px;
+      margin-right: 52px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 42px;
+      margin-top: 0;
+    }
   }
 
-  .footer__menu {
-    margin-right: 0;
-    margin-bottom: 42px;
-    margin-top: 0;
+  &__btn {
+    color: $mainTextColorBtn;
+    padding: 13px 57px 13px 62px ;
+    background-color: $mainBgColorBtn;
+    margin-bottom: 28px;
+    margin-top: -6px;
+
+    @media(max-width: 1200px) {
+      margin-top: 0;
+      padding: 13px 60px;
+    }
+
+    @media (max-width: 1024px) {
+      color: $secondTextColorBtn;
+      background-color:$secondBgColorBtn;
+      padding: 18px 76px;
+      margin-bottom: 47px;
+    }
   }
 
-  .footer__btn {
-    color: #ffffff;
-    background-color: #ff4e2e;
-    padding: 18px 76px;
-    margin-bottom: 47px;
+  &__wrap-in-footer {
+    margin-right: 8px;
+
+    @media(max-width: 1200px) {
+      margin-right: 0;
+    }
   }
 }
+
