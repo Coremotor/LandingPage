@@ -1,0 +1,23 @@
+{
+  "name": "mylandingpage",
+  "version": "1.0.0",
+  "description": "Create my first page :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coremotor/myLandingPage.git"
+  },
+  "author": "Andrey Demakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coremotor/myLandingPage/issues"
+  },
+  "homepage": "https://github.com/Coremotor/myLandingPage#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
