@@ -10,16 +10,17 @@
 
   @media (max-width: 1024px) {
     padding: 19px 0;
+    font-size: 12px;
   }
 
   &__text {
     margin: auto;
     font-size: 16px;
     color: $copyrightTextColor;
-  }
 
-  @media (max-width: 1024px) {
-    font-size: 12px;
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
   }
 }
 

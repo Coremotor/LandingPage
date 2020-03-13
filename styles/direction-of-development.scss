@@ -1,8 +1,12 @@
 .direction-of-development {
   display: flex;
   flex-direction: column;
-  padding-top: 85px;
+  padding-top: 87px;
   padding-bottom: 107px;
+
+  @media(max-width: 1200px) {
+    padding-top: 85px;
+  }
 
   @media(max-width: 1024px) {
     padding-top: 42px;
@@ -14,9 +18,12 @@
     font-weight: 700;
     color: $titleColor;
     text-align: center;
-    margin-right: 28px;
     margin-bottom: 88px;
     margin-top: 0;
+
+    @media(max-width: 1200px) {
+      margin-right: 27px;
+    }
 
     @media(max-width: 1024px) {
       font-size: 30px;
@@ -31,7 +38,6 @@
     @media(max-width: 1200px) {
       flex-wrap: wrap;
       padding: 0 88px 0 146px;
-      margin-bottom: 95px;
     }
 
     @media(max-width: 1024px) {
@@ -164,16 +170,17 @@
   }
 
   &__btn {
-    padding: 20px 60px;
+    padding: 20px 67px;
     margin: 95px auto 0;
 
     @media(max-width: 1200px) {
-      padding: 24px 84px;
+      padding: 25px 92px;
     }
 
     @media(max-width: 1024px) {
       padding: 18px 72px;
       font-size: 16px;
+      margin: auto;
     }
   }
 }

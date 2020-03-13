@@ -2,3 +2,19 @@
   background-position: left;
   background-repeat: no-repeat;
 }
+
+@mixin flyingTagsGradient {
+  position: absolute;
+  background: linear-gradient(0.0deg, #f26522 0%, #fa0891 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700; 
+}
+
+@mixin flyingTagsWhite {
+  position: absolute;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+

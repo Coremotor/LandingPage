@@ -1,4 +1,5 @@
 .about-developer {
+  position: relative;
   background-color: $sectionBg;
   background-image: url("../img/developer-foto-bg.png");
   background-repeat: no-repeat;
@@ -8,6 +9,118 @@
   @media(max-width: 1200px) {
     background-image: none;
     margin-top: 0;
+  }
+
+  &__flying-tag-braces {
+    @include flyingTagsGradient;
+    top: 0.7%;
+    left: 7%;
+    transform: rotate(27deg);
+    font-size: 48px;
+    
+    @media(max-width: 1200px) {
+      top: 3%;
+      left: 14%;
+    }
+
+    @media(max-width: 1024px) {
+      top: 7.7%;
+      left: 39.3%;
+      font-size: 25px;
+    }
+  }
+
+  &__flying-tag-lattice {
+    @include flyingTagsGradient;
+    top: 36.3%;
+    left: 13%;
+    transform: rotate(17deg);
+    font-size: 55px; 
+
+    @media(max-width: 1200px) {
+      top: 77.5%;
+      left: 12.2%;
+    }
+
+    @media(max-width: 1024px) {
+      top: 25.3%;
+      left: 38%;
+      font-size: 28px;
+    }
+  }
+
+  &__flying-tag-slash {
+    @include flyingTagsGradient;
+    top: 83.9%;
+    left: 19.7%;
+    transform: rotate(-21deg);
+    font-size: 43px; 
+
+    @media(max-width: 1200px) {
+      top: 70.1%;
+      left: 37.1%;
+    }
+
+    @media(max-width: 1024px) {
+      top: 4.2%;
+      left: 51.1%;
+      font-size: 21px;
+      transform: rotate(-27deg);
+    }
+  }
+  
+  &__flying-tag-div-up {
+    @include flyingTagsGradient;
+    top: 5.7%;
+    left: 41.1%;
+    transform: rotate(-13deg);
+    font-size: 30px;
+    
+    @media(max-width: 1200px) {
+      top: 2%;
+      left: 81%;
+    }
+
+    @media(max-width: 1024px) {
+      top: 15.2%;
+      left: 58.4%;
+      font-size: 16px;
+      transform: rotate(20deg);
+    }
+  }
+
+  &__flying-tag-div-down {
+    @include flyingTagsGradient;
+    top: 64.2%;
+    left: 49.6%;
+    transform: rotate(21deg);
+    font-size: 36px;
+
+    @media(max-width: 1200px) {
+      top: 64.7%;
+      left: 79.8%;
+    }
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__flying-tag-slash-tablet {
+    display: none;
+
+    @media(max-width: 1200px) {
+      @include flyingTagsGradient;
+      display: block;
+      top: 14.7%;
+      left: 42.5%;
+      transform: rotate(14deg);
+      font-size: 46px;
+    }
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
   }
   
   &__inner {
@@ -89,7 +202,7 @@
     font-size: 80px;
     font-weight: 900;
     color: $mainTextColor;
-    margin: 0 0 45px 0;
+    margin: 0 0 46px 0;
 
     @media(max-width: 1200px) {
       font-size: 54px;
@@ -122,10 +235,10 @@
   }
 
   &__btn {
-    padding: 20px 71px;
+    padding: 21px 79px;
 
     @media(max-width: 1200px) {
-      padding: 24px 97px;
+      padding: 24px 103px;
     }
 
     @media(max-width: 1024px) {

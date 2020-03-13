@@ -67,9 +67,11 @@
       margin-top: -4px;
     }
 
-    @media(max-width: 1024px) {
+    @media(max-width: 1024px) {      
+      letter-spacing: 0.4px;
       font-size: 18px;
       margin-top: 0;
+      margin-right: 36px;
     }
   }
 
