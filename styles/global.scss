@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   line-height: normal;/*интерлиньяж (межстрочный интервал) текста*/
   color: #000;/*цвет текста*/
+  scroll-behavior: smooth;
 }
 
 body.modal-active {

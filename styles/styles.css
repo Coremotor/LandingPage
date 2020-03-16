@@ -25,7 +25,8 @@ body {
   line-height: normal;
   /*интерлиньяж (межстрочный интервал) текста*/
   color: #000;
-  /*цвет текста*/ }
+  /*цвет текста*/
+  scroll-behavior: smooth; }
 
 body.modal-active {
   overflow: hidden;
@@ -1177,7 +1178,8 @@ template {
       margin-right: 0; } }
 
 .header {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  scroll-behavior: smooth; }
   .header__inner {
     display: -webkit-box;
     display: -webkit-flex;
