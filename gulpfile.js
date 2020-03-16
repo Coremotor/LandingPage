@@ -7,8 +7,8 @@ const paths = {
 		dest: 'public/styles'
 	},
 	scripts: {
-		src: '',
-		dest: ''
+		src: 'scripts/*.js',
+		dest: 'public/scripts'
 	},
 	img: {
 		src: 'img/*.{png,jpg}',
@@ -25,24 +25,27 @@ const rename = require('gulp-rename'); // Подключаем бибилиот�
 const htmlmin = require('gulp-htmlmin'); // Подключаем библиотеку для минификации HTML файлов
 const tinymin = require('gulp-tinypng'); // Подключаем библиотеку для оптимизации картинок через  ресурс tinypng
 const imageMin = require("gulp-imagemin"); // Подключаем библиотеку для оптимизации картинок gulp-плагином
-const webp = require("gulp-webp"); // Подключаем библиотеку дляконвертации картинок в формат webP
+const webp = require("gulp-webp"); // Подключаем библиотеку для конвертации картинок в формат webP
+const concat = require('gulp-concat'); //Подключаем библиотеку для сборки js файлов в один
+const uglify = require('gulp-uglify-es').default; //Подключаем библиотеку для минификации js файлов
+const del = require('del'); //Подключаем библиотеку для удаления файлов
+const runSequence = require('gulp4-run-sequence'); //Подключаем библиотеку для возможномти запуска тасков друг за другом
 
 
-function sassConvertInCss(){ // Создаем таск Sass
+// Блок работы со стилями
+function styles(){
 	return gulp.src(paths.styles.src) // Берем источник
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass и логируем ошибки
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('./styles')) // Выгружаем результат
+		.pipe(cssnano()) //Минифицируем CSS файл
+		.pipe(rename({suffix: ".min"})) //Переименовываем минифицированный CSS файл
+		.pipe(gulp.dest(paths.styles.dest)) // Выгружаем результат в продакшн
 		.pipe(browserSync.reload({stream: true})) // Обновляем страницу при изменении CSS стилей
-};
+}
+//Конец блока работы со стилями
 
-function cssmin() {
-	return gulp.src('styles/styles.css') // Берем источник
-		.pipe(cssnano())
-		.pipe(rename({suffix: ".min"}))
-		.pipe(gulp.dest(paths.styles.dest)) // Выгружаем результат
-};
-
+//Блок работы с HTML
 function minifyHtml() {
   return gulp.src('*.html') // указываем пути к файлам .html
   .pipe(htmlmin({
@@ -51,15 +54,17 @@ function minifyHtml() {
   }))
 	.pipe(gulp.dest('public/')) // оптимизированные файлы .html переносим на продакшен
 	.pipe(browserSync.reload({stream: true})) // Обновляем страницу при изменении HTML разметки
-};
+}
+//Конец блока работы с HTML
+
+//Блок работы с изображениями
 
 //tinypng api key WfKW8hdYnBwNbXK2vCS7cT0WnXxNrGTt
-
 function tinyPngJpg() {
 	gulp.src(paths.img.src) // Берем источник
 			.pipe(tinymin('WfKW8hdYnBwNbXK2vCS7cT0WnXxNrGTt')) //api key для ресурса tinypng юзать не более 500 раз в месяц
 			.pipe(gulp.dest(paths.img.dest)) // Выгружаем результат
-};
+}
 
 function images() {
 return gulp.src(paths.img.src) // Берем источник
@@ -74,16 +79,46 @@ return gulp.src(paths.img.src) // Берем источник
 			})
 	]))
 	.pipe(gulp.dest(paths.img.dest)) // Выгружаем результат
-};
+}
 
 function webpConvert() {
 return gulp.src(paths.img.src) // Берем источник
 	.pipe(webp({quality: 95,
 							lossless: false}))
 	.pipe(gulp.dest(paths.img.dest)) // Выгружаем результат
-};
+}
+//Конец блока работы с изображениями
 
-function browserSyncRun() { // Создаем таск browser-sync
+//Блок работы с JS
+function jsAllInOneFile() {
+	return gulp.src(paths.scripts.src)
+		.pipe(concat('all.js'))
+		.pipe(gulp.dest('scripts'))
+}
+
+function delJsAllInOneFile() {
+	return del('scripts/all.js')
+}
+
+function jsCompress() {
+	return gulp.src('scripts/all.js')
+		.pipe(rename({suffix: ".min"}))
+		.pipe(uglify())
+		.pipe(gulp.dest(paths.scripts.dest))
+}
+
+function scripts(done) {
+	runSequence(
+		'delJsAllInOneFile',
+		'jsAllInOneFile',
+		'jsCompress',
+		done
+	);
+}
+//Конец блока работы с JS
+
+// Создаем таск browser-sync
+function browserSyncRun() {
 	browserSync.init({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
 			baseDir: './' // Директория для сервера
@@ -92,22 +127,35 @@ function browserSyncRun() { // Создаем таск browser-sync
 		open: true,
 		notify: false // Отключаем уведомления
 	});
-};
+}
 
 function watch() {
-	gulp.watch('styles/**/*.scss', gulp.parallel(sassConvertInCss)) // Наблюдение за sass файлами и конвертация
+	gulp.watch('styles/**/*.scss', gulp.parallel(styles)) // Наблюдение за sass файлами и конвертация
 	gulp.watch('*.html', gulp.parallel(minifyHtml)) // Наблюдение за HTML файлами и конвертация
-};
+}
 
-exports.sassConvertInCss = sassConvertInCss;
-exports.cssmin = cssmin;
+function build(done){
+	runSequence(
+		'styles',
+		'scripts',
+		'minifyHtml',
+		done
+	);
+}
+
+exports.styles = styles;
 exports.minifyHtml = minifyHtml;
 exports.browserSyncRun = browserSyncRun;
 exports.tinyPngJpg = tinyPngJpg;
 exports.images = images;
 exports.webpConvert = webpConvert;
+exports.jsAllInOneFile = jsAllInOneFile;
+exports.delJsAllInOneFile = delJsAllInOneFile;
+exports.scripts = scripts;
+exports.jsCompress = jsCompress;
 exports.watch = watch;
-exports.default = gulp.parallel(sassConvertInCss, cssmin, browserSyncRun, watch);
+exports.build = build;
+exports.default = gulp.parallel(browserSyncRun, watch);
 
 
 

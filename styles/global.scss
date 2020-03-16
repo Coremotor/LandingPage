@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box; /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin)*/
+  scroll-behavior: smooth;
 }
 
 *,
@@ -17,7 +18,6 @@ body {
   font-weight: 400;
   line-height: normal;/*интерлиньяж (межстрочный интервал) текста*/
   color: #000;/*цвет текста*/
-  scroll-behavior: smooth;
 }
 
 body.modal-active {
