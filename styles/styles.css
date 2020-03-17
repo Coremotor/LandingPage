@@ -412,6 +412,21 @@ template {
 [hidden] {
   display: none; }
 
+@media (max-width: 1200px) {
+  .menu-open .header__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .menu-open .header__menu-btn {
+    background-image: url(../img/cross.png);
+    background-position: center;
+    background-repeat: no-repeat; } }
+
+@media (max-width: 1024px) {
+  .menu-open .header__menu-btn {
+    background-image: url(../img/cross-mobile.png); } }
+
 .about-developer {
   position: relative;
   background-color: #fbfbfb;
@@ -1205,7 +1220,24 @@ template {
     margin-left: 15px; }
     @media (max-width: 1200px) {
       .header__menu {
-        display: none; } }
+        display: none;
+        position: absolute;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        top: 100px;
+        line-height: 2;
+        font-size: 24px;
+        font-weight: 700;
+        z-index: 10;
+        background-color: transparent;
+        padding: 10px 0;
+        margin-left: 0; } }
+    @media (max-width: 1024px) {
+      .header__menu {
+        top: 50px; } }
   .header__menu-btn {
     width: 45px;
     height: 32px;

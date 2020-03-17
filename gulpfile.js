@@ -38,10 +38,11 @@ function styles(){
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass и логируем ошибки
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('./styles')) // Выгружаем результат
+		.pipe(browserSync.stream()) // Обновляем страницу при изменении CSS стилей
 		.pipe(cssnano()) //Минифицируем CSS файл
 		.pipe(rename({suffix: ".min"})) //Переименовываем минифицированный CSS файл
 		.pipe(gulp.dest(paths.styles.dest)) // Выгружаем результат в продакшн
-		.pipe(browserSync.reload({stream: true})) // Обновляем страницу при изменении CSS стилей
+		.pipe(browserSync.stream()) // Обновляем страницу при изменении CSS стилей
 }
 //Конец блока работы со стилями
 
@@ -53,7 +54,7 @@ function minifyHtml() {
     removeComments: true // удаляем все комментарии
   }))
 	.pipe(gulp.dest('public/')) // оптимизированные файлы .html переносим на продакшен
-	.pipe(browserSync.reload({stream: true})) // Обновляем страницу при изменении HTML разметки
+	.pipe(browserSync.stream()) // Обновляем страницу при изменении HTML разметки
 }
 //Конец блока работы с HTML
 
@@ -90,14 +91,14 @@ return gulp.src(paths.img.src) // Берем источник
 //Конец блока работы с изображениями
 
 //Блок работы с JS
+function delJsAllInOneFile() {
+	return del('scripts/all.js')
+}
+
 function jsAllInOneFile() {
 	return gulp.src(paths.scripts.src)
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('scripts'))
-}
-
-function delJsAllInOneFile() {
-	return del('scripts/all.js')
 }
 
 function jsCompress() {
@@ -105,6 +106,7 @@ function jsCompress() {
 		.pipe(rename({suffix: ".min"}))
 		.pipe(uglify())
 		.pipe(gulp.dest(paths.scripts.dest))
+		.pipe(browserSync.stream())
 }
 
 function scripts(done) {
@@ -130,8 +132,9 @@ function browserSyncRun() {
 }
 
 function watch() {
-	gulp.watch('styles/**/*.scss', gulp.parallel(styles)) // Наблюдение за sass файлами и конвертация
+	gulp.watch('styles/*.scss', gulp.parallel(styles)) // Наблюдение за sass файлами и конвертация
 	gulp.watch('*.html', gulp.parallel(minifyHtml)) // Наблюдение за HTML файлами и конвертация
+	gulp.watch(['scripts/*.js','!scripts/all.js'], gulp.parallel(scripts)) // Наблюдение за JS файлами и конвертация
 }
 
 function build(done){
