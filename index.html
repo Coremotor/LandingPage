@@ -30,7 +30,7 @@
       <div class="header__phone-btn-wrap">
         <a class="header__phone" href="tel:+7-499-995-55-77">+7(499)995-55-77</a>
 
-        <button class="btn header__btn" type="button">
+        <button class="btn header__btn js-header__btn" type="button">
           <span class="header__btn-text">Заказать звонок</span>
         </button>
       </div>  
@@ -208,7 +208,7 @@
         </ul>
       </div>
 
-      <button class="btn btn_orange example-projects__btn" type="button">Заказать проект</button>
+      <button class="btn btn_orange example-projects__btn js-example-projects__btn" type="button">Заказать проект</button>
     </div>
   </section>
 
@@ -243,7 +243,7 @@
       </address>
 
       <div class="footer__wrap-in-footer">
-        <button class="btn footer__btn" type="button">Заказать звонок</button>
+        <button class="btn footer__btn js-footer__btn" type="button">Заказать звонок</button>
         <ul class="social-networks list-style-reset">
           <li class="social-networks__network-item-link">
             <a href="#" class="social-networks__network-link social-networks__network-link_VK" aria-label="Личная страница Вконтакте"></a>
@@ -268,6 +268,26 @@
       <small class="copyright__text">© Дмитрий Алексеев, 2016 – 2018</small>
     </p>
   </footer>
+
+  <div class="modal-window js-modal-window modal-window_closed">
+    <button class="modal-window__close js-modal-window__close" type="button" aria-label="Закрыть модальное окно"></button>
+  
+    <form class="modal-window__form" method="GET" action="https://echo.htmlacademy.ru" accept-charset="utf-8">
+      <label class="modal-window__client-name-title" for="client-name">Как к Вам обратиться?</label>
+      <input class="modal-window__client-name" id="client-name" type="text" placeholder="Имя" required>
+      
+      <label class="modal-window__client-phone-title" for="client-phone">Номер телефона</label>
+      <input class="modal-window__client-phone" id="client-phone" type="text" placeholder="Номер телефона" required>
+
+      <label class="modal-window__client-email-title" for="client-email">Электронная почта</label>
+      <input class="modal-window__client-email" id="client-email" type="text" placeholder="Адрес электронной почты" required>
+           
+      <button class="btn btn_orange modal-window__btn-send" type="submit">Обратиться за консультацией</button>
+    </form>
+  
+  </div>
+
+  <div class="modal-window-overlay js-modal-window-overlay modal-window_closed"></div>
 
   <script src="scripts/all.js"></script>
   <script src="scripts/all.min.js"></script>

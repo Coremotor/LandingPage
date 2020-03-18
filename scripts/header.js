@@ -9,3 +9,12 @@ function showMenu() {
 
 headerMenuBtn.addEventListener('click', showMenu);
 
+
+
+const headerBtnElem = document.querySelector('.js-header__btn');
+
+headerBtnElem.addEventListener('click', function() {
+  modalWindowElem.classList.toggle('modal-window_closed');
+  modalWindowOverlayElem.classList.toggle('modal-window_closed');
+});
+
