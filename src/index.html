@@ -10,13 +10,12 @@
   <link rel="preload" href="fonts/roboto-700.woff2" as="font">
   <link rel="preload" href="fonts/roboto-900.woff2" as="font">
   
-  <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/styles.min.css"> <!--для продакшена-->
 
   <title>Landing page</title>
 </head>
 
-<body>  
+<body class="js-body">
   <header class="header js-header">
     <div class="header__inner container">
       <nav class="menu header__menu js-header__menu">
@@ -269,7 +268,7 @@
     </p>
   </footer>
 
-  <div class="modal-window js-modal-window modal-window_closed">
+  <div class="modal-window js-modal-window">
     <button class="modal-window__close js-modal-window__close" type="button" aria-label="Закрыть модальное окно"></button>
   
     <form class="modal-window__form" method="GET" action="https://echo.htmlacademy.ru" accept-charset="utf-8">
@@ -287,9 +286,8 @@
   
   </div>
 
-  <div class="modal-window-overlay js-modal-window-overlay modal-window_closed"></div>
+  <div class="modal-window-overlay js-modal-window-overlay"></div>
 
-  <script src="scripts/all.js"></script>
   <script src="scripts/all.min.js"></script>
 </body>
 </html>

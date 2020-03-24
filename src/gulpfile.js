@@ -4,15 +4,15 @@
 const paths = {
 	styles: {
 		src: 'styles/styles.scss',
-		dest: 'public/styles'
+		dest: '../public/styles'
 	},
 	scripts: {
 		src: 'scripts/*.js',
-		dest: 'public/scripts'
+		dest: '../public/scripts'
 	},
 	img: {
 		src: 'img/*.{png,jpg}',
-		dest: 'public/img'
+		dest: '../public/img'
 	}
 }
 
@@ -53,7 +53,7 @@ function minifyHtml() {
     collapseWhitespace: true, // удаляем все переносы
     removeComments: true // удаляем все комментарии
   }))
-	.pipe(gulp.dest('public/')) // оптимизированные файлы .html переносим на продакшен
+	.pipe(gulp.dest('../public/')) // оптимизированные файлы .html переносим на продакшен
 	.pipe(browserSync.stream()) // Обновляем страницу при изменении HTML разметки
 }
 //Конец блока работы с HTML
@@ -117,13 +117,14 @@ function scripts(done) {
 		done
 	);
 }
+
 //Конец блока работы с JS
 
 // Создаем таск browser-sync
 function browserSyncRun() {
 	browserSync.init({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: './' // Директория для сервера
+			baseDir: '../public' // Директория для сервера
 		},
 		port: 8080,
 		open: true,
@@ -132,8 +133,8 @@ function browserSyncRun() {
 }
 
 function watch() {
-	gulp.watch('styles/*.scss', gulp.parallel(styles)) // Наблюдение за sass файлами и конвертация
 	gulp.watch('*.html', gulp.parallel(minifyHtml)) // Наблюдение за HTML файлами и конвертация
+	gulp.watch('styles/*.scss', gulp.parallel(styles)) // Наблюдение за sass файлами и конвертация	
 	gulp.watch(['scripts/*.js','!scripts/all.js'], gulp.parallel(scripts)) // Наблюдение за JS файлами и конвертация
 }
 

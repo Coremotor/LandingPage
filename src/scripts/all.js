@@ -22,18 +22,8 @@ function ScrollToPriceElem() {
 }
 
 directionOfDevelopment__btnElem.addEventListener('click', ScrollToPriceElem);
-const exampleProjectsBtnElem = document.querySelector('.js-example-projects__btn');
 
-exampleProjectsBtnElem.addEventListener('click', function() {
-  modalWindowElem.classList.toggle('modal-window_closed');
-  modalWindowOverlayElem.classList.toggle('modal-window_closed');
-});
-const footerBtnElem = document.querySelector('.js-footer__btn');
 
-footerBtnElem.addEventListener('click', function() {
-  modalWindowElem.classList.toggle('modal-window_closed');
-  modalWindowOverlayElem.classList.toggle('modal-window_closed');
-});
 'use strict'
 
 const headerMenuBtn = document.querySelector('.js-header__menu-btn');
@@ -47,25 +37,44 @@ headerMenuBtn.addEventListener('click', showMenu);
 
 
 
-const headerBtnElem = document.querySelector('.js-header__btn');
 
-headerBtnElem.addEventListener('click', function() {
-  modalWindowElem.classList.toggle('modal-window_closed');
-  modalWindowOverlayElem.classList.toggle('modal-window_closed');
-});
 
 
 const modalWindowElem = document.querySelector('.js-modal-window');
 const modalWindowOverlayElem = document.querySelector('.js-modal-window-overlay');
 const modalWindowcloseButtonElem = document.querySelector('.js-modal-window__close');
 
+const headerBtnElem = document.querySelector('.js-header__btn');
+const exampleProjectsBtnElem = document.querySelector('.js-example-projects__btn');
+const footerBtnElem = document.querySelector('.js-footer__btn');
 
-modalWindowcloseButtonElem.addEventListener('click', function() {
-  modalWindowElem.classList.toggle('modal-window_closed');
-  modalWindowOverlayElem.classList.toggle('modal-window_closed');
-});
+const bodyElem = document.querySelector('.js-body'); 
 
-modalWindowOverlayElem.addEventListener('click', function() {
-  modalWindowElem.classList.add('modal-window_closed');
-  modalWindowOverlayElem.classList.add('modal-window_closed');
-});
+function onBtnOrder () {
+  bodyElem.classList.toggle('modal-window-open');
+  bodyElem.addEventListener('keydown', onBtnEscape);
+  modalWindowcloseButtonElem.addEventListener('click', ClickOnCloseBtnAndOverlay);
+  modalWindowOverlayElem.addEventListener('click', ClickOnCloseBtnAndOverlay)
+}
+
+function ClickOnCloseBtnAndOverlay() {
+  bodyElem.classList.toggle('modal-window-open');
+  bodyElem.removeEventListener('keydown', onBtnEscape);
+  modalWindowcloseButtonElem.removeEventListener('click', ClickOnCloseBtnAndOverlay);
+  modalWindowOverlayElem.removeEventListener('click', ClickOnCloseBtnAndOverlay);
+}
+
+function onBtnEscape() {
+  if (event.code === 'Escape' ) {
+    bodyElem.classList.toggle('modal-window-open');
+    bodyElem.removeEventListener('keydown', onBtnEscape);
+  }
+}
+
+headerBtnElem.addEventListener('click', onBtnOrder);
+
+exampleProjectsBtnElem.addEventListener('click', onBtnOrder);
+
+footerBtnElem.addEventListener('click', onBtnOrder);
+
+bodyElem.addEventListener('keydown', onBtnEscape);
