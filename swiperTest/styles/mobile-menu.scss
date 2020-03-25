@@ -1,0 +1,23 @@
+@media(max-width: 1200px) {
+
+  .menu-open {
+    .header__menu {
+      display: flex;
+    }
+
+    .header__menu-btn {
+      background-image: url(../img/cross.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-open {
+    .header__menu-btn {
+      background-image: url(../img/cross-mobile.png);
+      
+    }
+  }
+}

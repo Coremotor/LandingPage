@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  background-color: $copyrightBgColor;
+  padding: 29px 0;
+  margin: 0;
+
+  @media(max-width: 1200px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 19px 0;
+    font-size: 12px;
+  }
+
+  &__text {
+    margin: auto;
+    font-size: 16px;
+    color: $copyrightTextColor;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+}
+
