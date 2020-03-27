@@ -1,7 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.swiper-container {
+
+}
+
+
+.swiper-slide {
+  /* width: 420px; */
 }

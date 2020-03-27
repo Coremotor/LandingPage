@@ -10,6 +10,7 @@
   <link rel="preload" href="fonts/roboto-700.woff2" as="font">
   <link rel="preload" href="fonts/roboto-900.woff2" as="font">
   
+  <link rel="stylesheet" href="styles/swiper.min.css">
   <link rel="stylesheet" href="styles/styles.min.css"> <!--для продакшена-->
 
   <title>Landing page</title>
@@ -101,19 +102,19 @@
     <div class="example-projects__inner container">
       <h2 class="example-projects__title">Примеры моих работ</h2>
 
-      <div class="carousel example-projects__carousel">
+      <div class="swiper-container carousel example-projects__carousel">
         <ul class="carousel__btn-list list-style-reset">
           <li>
-            <button class="carousel__btn" type="button" aria-label="Перемотка влево"></button>
+            <button class="swiper-button-prev carousel__btn" type="button" aria-label="Перемотка влево"></button>
           </li>
 
           <li>
-            <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Перемотка вправо"></button>
+            <button class="swiper-button-next carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Перемотка вправо"></button>
           </li>
         </ul>
 
-        <ul class="carousel__list list-style-reset">
-          <li class="carousel__item">
+        <ul class="swiper-wrapper carousel__list list-style-reset">
+          <li class="swiper-slide carousel__item">
             <a href="#">
               <figure>
                 <picture>
@@ -139,7 +140,7 @@
             </a>         
           </li>
 
-          <li class="carousel__item">
+          <li class="swiper-slide carousel__item">
             <a href="#">
               <figure>
                 <picture>
@@ -165,7 +166,7 @@
             </a>
           </li>
 
-          <li class="carousel__item">
+          <li class="swiper-slide carousel__item">
             <a href="#">
               <figure>
                 <picture>
@@ -192,8 +193,8 @@
           </li>
         </ul>  
         
-        <ul class="carousel__btn-slider-list list-style-reset">
-          <li class="carousel__btn-slider-item">
+        <ul class="swiper-pagination carousel__btn-slider-list list-style-reset">
+          <!-- <li class="carousel__btn-slider-item">
             <button class="carousel__btn-slider" aria-label="Выбор примера работ"></button>
           </li>
 
@@ -203,7 +204,7 @@
 
           <li class="carousel__btn-slider-item">
             <button class="carousel__btn-slider" aria-label="Выбор примера работ"></button>
-          </li>
+          </li> -->
         </ul>
       </div>
 
@@ -288,6 +289,42 @@
 
   <div class="modal-window-overlay js-modal-window-overlay"></div>
 
-  <script src="scripts/all.min.js"></script>  
+  <script src="scripts/all.min.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+
+  <script>
+      var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      slidesPerView: 3,
+      spaceBetween: 20,
+
+      breakpoints: {
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+      
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },      
+    })
+  </script> 
+
 </body>
 </html>

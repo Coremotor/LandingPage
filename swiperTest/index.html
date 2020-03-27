@@ -6,22 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
   <title>Landing page</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/swiper.css">
+
 </head>
 
 <body class="js-body"> 
-  <div class="carousel example-projects__carousel">
+  <div class="swiper-container carousel example-projects__carousel">
     <ul class="carousel__btn-list list-style-reset">
-      <li>
-        <button class="carousel__btn" type="button" aria-label="Перемотка влево"></button>
+      <li class="">
+        <button class="swiper-button-prev carousel__btn" type="button" aria-label="Перемотка влево"></button>
       </li>
 
-      <li>
-        <button class="carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Перемотка вправо"></button>
+      <li class="">
+        <button class="swiper-button-next carousel__btn carousel__btn_rotate_180 carousel__btn_position" type="button" aria-label="Перемотка вправо"></button>
       </li>
     </ul>
 
-    <ul class="carousel__list list-style-reset">
-      <li class="carousel__item">
+    <ul class="swiper-wrapper carousel__list list-style-reset">
+      <li class="swiper-slide carousel__item">
         <a href="#">
           <figure>
             <picture>
@@ -47,7 +49,7 @@
         </a>         
       </li>
 
-      <li class="carousel__item">
+      <li class="swiper-slide carousel__item">
         <a href="#">
           <figure>
             <picture>
@@ -73,7 +75,7 @@
         </a>
       </li>
 
-      <li class="carousel__item">
+      <li class="swiper-slide carousel__item">
         <a href="#">
           <figure>
             <picture>
@@ -100,19 +102,14 @@
       </li>
     </ul>  
     
-    <ul class="carousel__btn-slider-list list-style-reset">
-      <li class="carousel__btn-slider-item">
-        <button class="carousel__btn-slider" aria-label="Выбор примера работ"></button>
-      </li>
+    <ul class="swiper-pagination carousel__btn-slider-list list-style-reset">
 
-      <li class="carousel__btn-slider-item">
-        <button class="carousel__btn-slider" aria-label="Выбор примера работ"></button>
-      </li>
-
-      <li class="carousel__btn-slider-item">
-        <button class="carousel__btn-slider" aria-label="Выбор примера работ"></button>
-      </li>
     </ul>
   </div>
+
+  <script src="scripts/swiper.js"></script>
+  <script src="/scripts/swi.js"></script>
+
+
 </body>
 </html>

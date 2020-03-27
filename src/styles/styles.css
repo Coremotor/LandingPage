@@ -33,7 +33,7 @@ body.modal-active {
   /*содержания блочного элемента отображается только область внутри элемента, остальное будет скрыто*/ }
 
 img {
-  max-width: 100%;
+  width: 100%;
   /*отоброжение картинки по всей ширине*/ }
 
 a {
@@ -761,7 +761,6 @@ template {
     display: flex; }
     @media (max-width: 1200px) {
       .carousel__list {
-        padding: 0 38px 0;
         margin-bottom: 100px; } }
     @media (max-width: 1024px) {
       .carousel__list {
@@ -775,17 +774,8 @@ template {
     @media (max-width: 1200px) {
       .carousel__item {
         margin-right: 37px; } }
-    @media (max-width: 1024px) {
-      .carousel__item {
-        padding: 0 19px 0; } }
-  @media (max-width: 1024px) {
-    .carousel__item:first-child {
-      display: none; } }
   .carousel__item:last-child {
     margin-right: 0; }
-    @media (max-width: 1200px) {
-      .carousel__item:last-child {
-        display: none; } }
   @media (max-width: 1200px) {
     .carousel__item:nth-child(2) {
       margin-right: 0; } }
@@ -837,6 +827,16 @@ template {
   @media (max-width: 1024px) {
     .carousel__btn-slider-item:last-child {
       margin-right: 0; } }
+
+.swiper-container {
+  border: 2px solid red;
+  width: 1200px; }
+  @media (max-width: 1200px) {
+    .swiper-container {
+      width: 1024px; } }
+  @media (max-width: 1024px) {
+    .swiper-container {
+      width: 320px; } }
 
 .contacts {
   display: -webkit-box;
