@@ -732,6 +732,7 @@ template {
     background-image: url("../img/arrow.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
     border: none;
@@ -830,7 +831,7 @@ template {
 
 .swiper-container {
   border: 2px solid red;
-  width: 1200px; }
+  width: 1170px; }
   @media (max-width: 1200px) {
     .swiper-container {
       width: 1024px; } }

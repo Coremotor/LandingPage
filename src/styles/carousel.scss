@@ -11,6 +11,7 @@
     background-image: url("../img/arrow.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.07);
     border: none;
     border-radius: 50%;
@@ -161,7 +162,7 @@
 .swiper-container {
   border: 2px solid red;
 
-  width: 1200px;
+  width: 1170px;
 
   @media(max-width: 1200px) {
     width: 1024px;
