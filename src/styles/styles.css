@@ -623,7 +623,7 @@ template {
         background-image: url("../img/developer-foto-bg-mobile.png");
         background-repeat: no-repeat;
         background-position: bottom right;
-        padding: 86px 0px 0px 77px; } }
+        padding: 90px 24px 0 73px; } }
   @media (max-width: 1200px) {
     .about-developer__foto {
       margin-bottom: -4px; } }
@@ -720,13 +720,18 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .carousel__btn {
     position: absolute;
-    top: 123px;
-    right: -26px;
+    top: 150px;
     width: 56px;
     height: 56px;
     background-image: url("../img/arrow.png");
@@ -738,20 +743,18 @@ template {
     border: none;
     border-radius: 50%;
     padding: 0; }
-    @media (max-width: 1250px) {
-      .carousel__btn {
-        right: -63px; } }
   .carousel__btn_rotate_180 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
   .carousel__btn_position {
-    left: 1144px; }
-    @media (max-width: 1250px) {
-      .carousel__btn_position {
-        left: 1068px; } }
+    left: 1180px; }
   .carousel__btn-list {
-    position: relative; }
+    position: relative;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    margin-left: -38px; }
     @media (max-width: 1200px) {
       .carousel__btn-list {
         display: none; } }
@@ -767,19 +770,9 @@ template {
       .carousel__list {
         padding: 0;
         margin-bottom: 40px; } }
-  .carousel__item {
-    margin: 0 30px 0 0; }
-    @media (max-width: 1250px) {
-      .carousel__item {
-        margin-right: 10px; } }
-    @media (max-width: 1200px) {
-      .carousel__item {
-        margin-right: 37px; } }
-  .carousel__item:last-child {
-    margin-right: 0; }
-  @media (max-width: 1200px) {
-    .carousel__item:nth-child(2) {
-      margin-right: 0; } }
+  @media (max-width: 1024px) {
+    .carousel__item {
+      margin-bottom: 26px; } }
   .carousel__text {
     text-align: center;
     font-size: 20px;
@@ -830,14 +823,37 @@ template {
       margin-right: 0; } }
 
 .swiper-container {
-  border: 2px solid red;
   width: 1170px; }
   @media (max-width: 1200px) {
     .swiper-container {
-      width: 1024px; } }
+      width: 947px; } }
   @media (max-width: 1024px) {
     .swiper-container {
-      width: 320px; } }
+      width: 282px; } }
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px; }
+  @media (max-width: 1024px) {
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px; } }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px 14px; }
+  @media (max-width: 1024px) {
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 8px; } }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  left: auto;
+  width: auto; }
+
+.swiper-pagination-bullet {
+  background-color: #ebebeb; }
+
+.swiper-pagination-bullet-active {
+  background-color: #ff4e2e; }
 
 .contacts {
   display: -webkit-box;
@@ -966,7 +982,7 @@ template {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding: 0 0 50px 0;
+        padding: 0 0 55px 0;
         margin: 0; } }
   .direction-of-development__skill-item {
     width: 280px;
@@ -1116,7 +1132,7 @@ template {
     margin-bottom: 97px; }
     @media (max-width: 1024px) {
       .example-projects__carousel {
-        margin-bottom: 45px; } }
+        margin-bottom: 40px; } }
   .example-projects__btn {
     padding: 20px 72px; }
     @media (max-width: 1200px) {

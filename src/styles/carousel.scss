@@ -1,11 +1,11 @@
 .carousel {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
   &__btn {
     position: absolute;
-    top: 123px;
-    right: -26px;
+    top: 150px;
     width: 56px;
     height: 56px;
     background-image: url("../img/arrow.png");
@@ -16,10 +16,6 @@
     border: none;
     border-radius: 50%;
     padding: 0;
-
-    @media(max-width: 1250px) {
-      right: -63px;
-    }
   }
 
   &__btn_rotate_180 {
@@ -27,14 +23,12 @@
   }
 
   &__btn_position {
-    left: 1144px;
-
-    @media(max-width: 1250px) {
-      left: 1068px;
-    }
+    left: 1180px;
   }
   &__btn-list {
     position: relative;
+    align-self: flex-start;
+    margin-left: -38px;
 
     @media(max-width: 1200px) {
       display: none;
@@ -56,38 +50,8 @@
   }
 
   &__item {
-    margin: 0 30px 0 0;
-
-    @media(max-width: 1250px) {
-      margin-right: 10px;
-    }
-
-    @media(max-width: 1200px) {
-      margin-right: 37px;
-    }
-
     @media(max-width: 1024px) {
-      // padding: 0 19px 0;
-    }
-  }
-
-  &__item:first-child {
-    @media(max-width: 1024px) {
-      // display: none;
-    }
-  }
-
-  &__item:last-child {
-    margin-right: 0;
-
-    @media(max-width: 1200px) {
-      // display: none;
-    }
-  }
-
-  &__item:nth-child(2) {
-    @media(max-width: 1200px) {
-      margin-right: 0;
+      margin-bottom: 26px;
     }
   }
 
@@ -160,21 +124,48 @@
 
 
 .swiper-container {
-  border: 2px solid red;
-
   width: 1170px;
 
   @media(max-width: 1200px) {
-    width: 1024px;
+    width: 947px;
   }
 
   @media(max-width: 1024px) {
-    width: 320px;
+    width: 282px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+
+  @media(max-width: 1024px) {
+    width: 10px;
+    height: 10px;
   }
 }
 
 
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px 14px;
 
+  @media(max-width: 1024px) {
+    margin: 0 8px;
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  left: auto;
+  width: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: $btnSliderBgColor;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $btnSliderBgColorHover;
+}
 
 
 
