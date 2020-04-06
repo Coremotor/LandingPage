@@ -460,7 +460,7 @@ template {
     @media (max-width: 1024px) {
       .about-developer__flying-tag-braces {
         top: 7.7%;
-        left: 39.3%;
+        left: 19.3%;
         font-size: 25px; } }
   .about-developer__flying-tag-lattice {
     position: absolute;
@@ -484,7 +484,7 @@ template {
     @media (max-width: 1024px) {
       .about-developer__flying-tag-lattice {
         top: 25.3%;
-        left: 38%;
+        left: 16%;
         font-size: 28px; } }
   .about-developer__flying-tag-slash {
     position: absolute;
@@ -507,8 +507,8 @@ template {
         left: 37.1%; } }
     @media (max-width: 1024px) {
       .about-developer__flying-tag-slash {
-        top: 4.2%;
-        left: 51.1%;
+        top: 4.7%;
+        left: 52.7%;
         font-size: 21px;
         -webkit-transform: rotate(-27deg);
             -ms-transform: rotate(-27deg);
@@ -535,7 +535,7 @@ template {
     @media (max-width: 1024px) {
       .about-developer__flying-tag-div-up {
         top: 15.2%;
-        left: 58.4%;
+        left: 73.4%;
         font-size: 16px;
         -webkit-transform: rotate(20deg);
             -ms-transform: rotate(20deg);
@@ -623,7 +623,7 @@ template {
         background-image: url("../img/developer-foto-bg-mobile.png");
         background-repeat: no-repeat;
         background-position: bottom right;
-        padding: 90px 24px 0 73px; } }
+        padding: 87px 24px 0 73px; } }
   @media (max-width: 1200px) {
     .about-developer__foto {
       margin-bottom: -4px; } }
@@ -765,7 +765,7 @@ template {
     display: flex; }
     @media (max-width: 1200px) {
       .carousel__list {
-        margin-bottom: 100px; } }
+        margin-bottom: 126px; } }
     @media (max-width: 1024px) {
       .carousel__list {
         padding: 0;
@@ -982,7 +982,7 @@ template {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding: 0 0 55px 0;
+        padding: 0 0 50px 0;
         margin: 0; } }
   .direction-of-development__skill-item {
     width: 280px;
@@ -1129,7 +1129,7 @@ template {
         padding: 0 10px 0;
         margin: 0 0 38px 0; } }
   .example-projects__carousel {
-    margin-bottom: 97px; }
+    margin-bottom: 91px; }
     @media (max-width: 1024px) {
       .example-projects__carousel {
         margin-bottom: 40px; } }
