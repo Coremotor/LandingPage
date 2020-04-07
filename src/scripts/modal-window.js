@@ -35,4 +35,3 @@ exampleProjectsBtnElem.addEventListener('click', onBtnOrder);
 
 footerBtnElem.addEventListener('click', onBtnOrder);
 
-bodyElem.addEventListener('keydown', onBtnEscape);

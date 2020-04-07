@@ -1335,10 +1335,10 @@ template {
     color: #8993ad;
     margin-bottom: 10px; }
   .menu__item-footer:last-child {
+    font-size: 18px;
     margin-bottom: 0; }
     @media (max-width: 1024px) {
       .menu__item-footer:last-child {
-        font-size: 15px;
         margin-bottom: 15px; } }
 
 .price {
