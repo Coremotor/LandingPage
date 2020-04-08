@@ -43,7 +43,7 @@
   &__menu-btn {
     width: 45px;
     height: 32px;
-    background-image: url("../img/menu-btn.png");
+    background: url("../img/css_sprites.png") -91px -275px;
     background-color: $mainBgColorBtn;
     border: none;
     display: none;
@@ -55,7 +55,7 @@
     @media(max-width: 1024px) {
       width: 24px;
       height: 18px;
-      background-image: url("../img/menu-btn-mobile.png");
+      background: url("../img/css_sprites.png") -209px -133px;
     }
   }
 
@@ -97,12 +97,13 @@
     @media(max-width: 1024px) {
       width: 26px;
       height: 26px;
-      background-image: url("../img/btn-call-order.png");
+      background: url("../img/css_sprites.png") -209px -87px;
       background-repeat: no-repeat;
-      background-position: center;
       border: none;
       padding: 0;
     }
+
+    
   }
 
   &__btn-text {

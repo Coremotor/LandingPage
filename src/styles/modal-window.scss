@@ -26,10 +26,9 @@
 
     &__close {
       align-self: flex-end;
-      background-color: transparent;
-      background-image: url('../img/cross-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
+      width: 20px; 
+      height: 20px;
+      background: url("../img/css_sprites.png") -208px -275px;
       border: none;
       padding: 10px;
       margin: 10px;

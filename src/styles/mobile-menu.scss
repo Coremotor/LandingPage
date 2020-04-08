@@ -6,9 +6,9 @@
     }
 
     .header__menu-btn {
-      background-image: url(../img/cross.png);
-      background-position: center;
-      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+      background: url("../img/css_sprites.png") -156px -275px;
     }
   }
 }
@@ -16,7 +16,9 @@
 @media (max-width: 1024px) {
   .menu-open {
     .header__menu-btn {
-      background-image: url(../img/cross-mobile.png);
+      width: 20px; 
+      height: 20px;
+      background: url("../img/css_sprites.png") -208px -275px;
       
     }
   }

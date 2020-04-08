@@ -13,23 +13,23 @@
     display: block;
     width: 35px;
     height: 30px;
-    background-image: url("../img/sprite.png");
+    background: url("../img/css_sprites.png");
   }
 
   &__network-link_VK {
-    background-position: -14px -10px;
+    background-position: -24px -20px;
   }
 
   &__network-link_FB {
-    background-position: -69px -10px;
+    background-position: -79px -20px;
   }
 
   &__network-link_Twit {
-    background-position: -123px -10px;
+    background-position: -133px -20px;
   }
 
   &__network-link_Insta {
-    background-position: -178px -10px;
+    background-position: -188px -20px;
   }
 
 }

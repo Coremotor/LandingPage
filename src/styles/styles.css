@@ -419,13 +419,15 @@ template {
     display: -ms-flexbox;
     display: flex; }
   .menu-open .header__menu-btn {
-    background-image: url(../img/cross.png);
-    background-position: center;
-    background-repeat: no-repeat; } }
+    width: 32px;
+    height: 32px;
+    background: url("../img/css_sprites.png") -156px -275px; } }
 
 @media (max-width: 1024px) {
   .menu-open .header__menu-btn {
-    background-image: url(../img/cross-mobile.png); } }
+    width: 20px;
+    height: 20px;
+    background: url("../img/css_sprites.png") -208px -275px; } }
 
 .about-developer {
   position: relative;
@@ -623,7 +625,7 @@ template {
         background-image: url("../img/developer-foto-bg-mobile.png");
         background-repeat: no-repeat;
         background-position: bottom right;
-        padding: 87px 24px 0 73px; } }
+        padding: 81px 16px 0 73px; } }
   @media (max-width: 1200px) {
     .about-developer__foto {
       margin-bottom: -4px; } }
@@ -731,13 +733,10 @@ template {
           align-items: center; }
   .carousel__btn {
     position: absolute;
-    top: 150px;
-    width: 56px;
-    height: 56px;
-    background-image: url("../img/arrow.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    top: 141px;
+    width: 61px;
+    height: 60px;
+    background: url("../img/css_sprites.png") -185px -181px;
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
     border: none;
@@ -876,24 +875,50 @@ template {
       color: #8993ad;
       margin: 0 0 23px; } }
   .contacts__phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     letter-spacing: 1px;
-    background-image: url("../img/icon-phone.png");
     background-position: left;
     background-repeat: no-repeat;
-    padding-left: 35px;
-    margin-bottom: 29px; }
+    margin-bottom: 28px; }
+    .contacts__phone::before {
+      display: block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: url("../img/css_sprites.png") -353px -10px;
+      margin-top: 5px;
+      margin-right: 20px; }
+      @media (max-width: 1024px) {
+        .contacts__phone::before {
+          width: 13px;
+          height: 13px;
+          background: url("../img/css_sprites.png") -353px -48px; } }
     @media (max-width: 1024px) {
       .contacts__phone {
-        background-image: url("../img/icon-phone-mobile.png");
-        margin-bottom: 23px; } }
+        margin-bottom: 20px; } }
   .contacts__email {
-    background-image: url("../img/icon-mail.png");
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 43px; }
-    @media (max-width: 1024px) {
-      .contacts__email {
-        background-image: url("../img/icon-mail-mobile.png"); } }
+    background-repeat: no-repeat; }
+    .contacts__email::before {
+      display: block;
+      content: "";
+      width: 23px;
+      height: 15px;
+      background: url("../img/css_sprites.png") -248px -275px;
+      margin-top: 10px;
+      margin-right: 20px; }
+      @media (max-width: 1024px) {
+        .contacts__email::before {
+          width: 14px;
+          height: 10px;
+          background: url("../img/css_sprites.png") -353px -81px; } }
 
 .container {
   max-width: 1200px;
@@ -982,7 +1007,7 @@ template {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        padding: 0 0 50px 0;
+        padding: 0 0 52px 0;
         margin: 0; } }
   .direction-of-development__skill-item {
     width: 280px;
@@ -1002,80 +1027,162 @@ template {
         margin-bottom: 81px; } }
     @media (max-width: 1024px) {
       .direction-of-development__skill-item:first-child {
-        margin-left: 26px;
+        margin-left: 13px;
         margin-right: 0;
-        margin-bottom: 49px; } }
+        margin-bottom: 51px; } }
   .direction-of-development__skill-item:nth-child(2) {
     margin-right: 26px; }
     @media (max-width: 1200px) {
       .direction-of-development__skill-item:nth-child(2) {
         margin-right: 0; } }
+    @media (max-width: 1024px) {
+      .direction-of-development__skill-item:nth-child(2) {
+        margin-bottom: 51px; } }
   @media (max-width: 1200px) {
     .direction-of-development__skill-item:nth-child(3) {
       margin-right: 83px; } }
   @media (max-width: 1024px) {
     .direction-of-development__skill-item:nth-child(3) {
-      margin-left: 18px;
-      margin-right: 0; } }
+      margin-left: 6px;
+      margin-right: 0;
+      margin-bottom: 51px; } }
   @media (max-width: 1024px) {
     .direction-of-development__skill-item:last-child {
       margin-bottom: 0; } }
   .direction-of-development__link-layout {
-    display: block;
-    background-image: url("../img/skill_img_landing.png");
-    background-repeat: no-repeat;
-    background-position: 89px top;
-    padding-top: 93px;
-    padding-right: 16px; }
-    @media (max-width: 1024px) {
-      .direction-of-development__link-layout {
-        background-image: url("../img/skill_img_landing_mobile.png");
-        background-position-x: 83px;
-        padding-top: 70px;
-        line-height: 1.5; } }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .direction-of-development__link-layout::before {
+      display: block;
+      content: "";
+      width: 80px;
+      height: 74px;
+      background: url("../img/css_sprites.png") -10px -87px;
+      margin-bottom: 20px;
+      margin-right: 19px; }
+      @media (max-width: 1200px) {
+        .direction-of-development__link-layout::before {
+          margin-right: 22px; } }
+      @media (max-width: 1024px) {
+        .direction-of-development__link-layout::before {
+          width: 61px;
+          height: 56px;
+          background: url("../img/css_sprites.png") -259px -104px;
+          line-height: 1.5;
+          margin-right: 15px;
+          margin-bottom: 16px; } }
   .direction-of-development__link-adaptive {
-    display: block;
-    background-image: url("../img/skill_img_responsive.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 93px; }
-    @media (max-width: 1024px) {
-      .direction-of-development__link-adaptive {
-        background-image: url("../img/skill_img_responsive_mobile.png");
-        padding-top: 74px;
-        line-height: 1.5; } }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .direction-of-development__link-adaptive::before {
+      display: block;
+      content: "";
+      width: 79px;
+      height: 74px;
+      background: url("../img/css_sprites.png") -110px -87px;
+      margin-bottom: 20px; }
+      @media (max-width: 1024px) {
+        .direction-of-development__link-adaptive::before {
+          width: 61px;
+          height: 56px;
+          background: url("../img/css_sprites.png") -10px -275px;
+          line-height: 1.5; } }
   .direction-of-development__link-front {
-    display: block;
-    background-image: url("../img/skill_img_frontend.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 93px;
-    padding-right: 37px;
-    padding-left: 35px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px; }
     @media (max-width: 1200px) {
       .direction-of-development__link-front {
-        padding-right: 49px;
-        padding-left: 22px;
-        background-position-x: 92px; } }
-    @media (max-width: 1024px) {
-      .direction-of-development__link-front {
-        background-image: url("../img/skill_img_frontend_mobile.png");
-        padding-top: 74px;
-        line-height: 1.5; } }
+        padding-left: 0; } }
+    .direction-of-development__link-front::before {
+      display: block;
+      content: "";
+      width: 74px;
+      height: 74px;
+      background: url("../img/css_sprites.png") -10px -181px;
+      margin-bottom: 20px;
+      margin-right: 15px; }
+      @media (max-width: 1200px) {
+        .direction-of-development__link-front::before {
+          margin-right: 20px; } }
+      @media (max-width: 1024px) {
+        .direction-of-development__link-front::before {
+          width: 60px;
+          height: 60px;
+          background: url("../img/css_sprites.png") -266px -181px;
+          line-height: 1.5;
+          margin-right: 7px;
+          margin-bottom: 16px; } }
   .direction-of-development__link-correction {
-    display: block;
-    background-image: url("../img/skill_img_coding.png");
-    background-repeat: no-repeat;
-    background-position: 116px top;
-    padding-top: 93px;
-    padding-left: 29px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 28px; }
+    .direction-of-development__link-correction::before {
+      display: block;
+      content: "";
+      width: 74px;
+      height: 74px;
+      background: url("../img/css_sprites.png") -259px -10px;
+      margin-bottom: 20px;
+      margin-left: 4px; }
+      @media (max-width: 1200px) {
+        .direction-of-development__link-correction::before {
+          margin-left: -3px; } }
+      @media (max-width: 1024px) {
+        .direction-of-development__link-correction::before {
+          width: 61px;
+          height: 61px;
+          background: url("../img/css_sprites.png") -104px -181px;
+          line-height: 1.5;
+          margin-left: -2px;
+          margin-bottom: 16px; } }
     @media (max-width: 1024px) {
       .direction-of-development__link-correction {
-        background-image: url("../img/skill_img_coding_mobile.png");
-        background-position-x: 109px;
-        padding-top: 75px;
-        padding-left: 0;
-        line-height: 1.5; } }
+        padding-left: 0; } }
   .direction-of-development__btn {
     padding: 20px 67px;
     margin: 95px auto 0; }
@@ -1129,7 +1236,7 @@ template {
         padding: 0 10px 0;
         margin: 0 0 38px 0; } }
   .example-projects__carousel {
-    margin-bottom: 91px; }
+    margin-bottom: 89px; }
     @media (max-width: 1024px) {
       .example-projects__carousel {
         margin-bottom: 40px; } }
@@ -1175,7 +1282,7 @@ template {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 88px; }
+  margin-right: 90px; }
   @media (max-width: 1200px) {
     .footer__menu {
       margin-top: 6px;
@@ -1258,7 +1365,7 @@ template {
   .header__menu-btn {
     width: 45px;
     height: 32px;
-    background-image: url("../img/menu-btn.png");
+    background: url("../img/css_sprites.png") -91px -275px;
     background-color: transparent;
     border: none;
     display: none; }
@@ -1269,7 +1376,7 @@ template {
       .header__menu-btn {
         width: 24px;
         height: 18px;
-        background-image: url("../img/menu-btn-mobile.png"); } }
+        background: url("../img/css_sprites.png") -209px -133px; } }
   .header__phone-btn-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1313,9 +1420,8 @@ template {
       .header__btn {
         width: 26px;
         height: 26px;
-        background-image: url("../img/btn-call-order.png");
+        background: url("../img/css_sprites.png") -209px -87px;
         background-repeat: no-repeat;
-        background-position: center;
         border: none;
         padding: 0; } }
   @media (max-width: 1024px) {
@@ -1339,7 +1445,8 @@ template {
     margin-bottom: 0; }
     @media (max-width: 1024px) {
       .menu__item-footer:last-child {
-        margin-bottom: 15px; } }
+        margin-bottom: 15px;
+        font-size: 16px; } }
 
 .price {
   position: relative;
@@ -1475,15 +1582,15 @@ template {
     display: block;
     width: 35px;
     height: 30px;
-    background-image: url("../img/sprite.png"); }
+    background: url("../img/css_sprites.png"); }
   .social-networks__network-link_VK {
-    background-position: -14px -10px; }
+    background-position: -24px -20px; }
   .social-networks__network-link_FB {
-    background-position: -69px -10px; }
+    background-position: -79px -20px; }
   .social-networks__network-link_Twit {
-    background-position: -123px -10px; }
+    background-position: -133px -20px; }
   .social-networks__network-link_Insta {
-    background-position: -178px -10px; }
+    background-position: -188px -20px; }
 
 .modal-window {
   display: none; }
@@ -1515,10 +1622,9 @@ template {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    background-color: transparent;
-    background-image: url("../img/cross-mobile.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background: url("../img/css_sprites.png") -208px -275px;
     border: none;
     padding: 10px;
     margin: 10px; }
