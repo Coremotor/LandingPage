@@ -84,7 +84,7 @@ return gulp.src(paths.img.src) // Берем источник
 
 function webpConvert() {
 return gulp.src(paths.img.src) // Берем источник
-	.pipe(webp({quality: 95,
+	.pipe(webp({quality: 50,
 							lossless: false}))
 	.pipe(gulp.dest(paths.img.dest)) // Выгружаем результат
 }

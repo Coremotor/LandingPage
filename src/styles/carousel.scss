@@ -21,11 +21,19 @@
 
   &__btn_position {
     left: 1180px;
+
+    @media(max-width: 1260px) {
+      left: 1100px;
+    }
   }
   &__btn-list {
     position: relative;
     align-self: flex-start;
     margin-left: -38px;
+
+    @media(max-width: 1260px) {
+      margin-left: 0;
+    }
 
     @media(max-width: 1200px) {
       display: none;
