@@ -1935,16 +1935,16 @@ button.swiper-pagination-bullet {
             -ms-flex-direction: column;
                 flex-direction: column;
         top: 100px;
-        line-height: 2;
-        font-size: 24px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 400;
         z-index: 10;
-        background-color: transparent;
+        background-color: #fbfbfb;
         padding: 10px 0;
         margin-left: 0; } }
     @media (max-width: 1024px) {
       .header__menu {
-        top: 50px; } }
+        top: 50px;
+        font-size: 16px; } }
   .header__menu-btn {
     width: 45px;
     height: 32px;

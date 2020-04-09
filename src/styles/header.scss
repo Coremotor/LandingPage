@@ -26,17 +26,17 @@
       position: absolute;
       flex-direction: column;
       top: 100px;
-      line-height: 2;
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 20px;
+      font-weight: 400;
       z-index: 10;
-      background-color: transparent;
+      background-color: $sectionBg;
       padding: 10px 0;
       margin-left: 0;
     }
 
     @media(max-width: 1024px) {
       top: 50px;
+      font-size: 16px;
     }
   }
 
