@@ -39,6 +39,11 @@
     margin-bottom: 28px;
     margin-top: -6px;
 
+    &:hover {
+      color: $secondTextColorBtn;
+      background-color: $secondBgColorBtn;
+    }
+
     @media(max-width: 1200px) {
       margin-top: 0;
       padding: 13px 60px;
@@ -49,6 +54,12 @@
       background-color:$secondBgColorBtn;
       padding: 18px 76px;
       margin-bottom: 47px;
+
+      &:hover {
+        color: $mainTextColorBtn;
+        background-color: $mainBgColorBtn;
+        border: 1px solid $mainBorderColorBtn;
+      }
     }
   }
 

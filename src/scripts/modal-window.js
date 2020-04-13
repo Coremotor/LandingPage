@@ -10,6 +10,7 @@ const bodyElem = document.querySelector('.js-body');
 
 function onBtnOrder () {
   bodyElem.classList.toggle('modal-window-open');
+  bodyElem.classList.toggle('overflow-hiden');
   bodyElem.addEventListener('keydown', onBtnEscape);
   modalWindowcloseButtonElem.addEventListener('click', ClickOnCloseBtnAndOverlay);
   modalWindowOverlayElem.addEventListener('click', ClickOnCloseBtnAndOverlay)
@@ -17,6 +18,7 @@ function onBtnOrder () {
 
 function ClickOnCloseBtnAndOverlay() {
   bodyElem.classList.toggle('modal-window-open');
+  bodyElem.classList.toggle('overflow-hiden');
   bodyElem.removeEventListener('keydown', onBtnEscape);
   modalWindowcloseButtonElem.removeEventListener('click', ClickOnCloseBtnAndOverlay);
   modalWindowOverlayElem.removeEventListener('click', ClickOnCloseBtnAndOverlay);
@@ -24,7 +26,8 @@ function ClickOnCloseBtnAndOverlay() {
 
 function onBtnEscape() {
   if (event.code === 'Escape' ) {
-    bodyElem.classList.toggle('modal-window-open');
+    bodyElem.classList.toggle('modal-window-open'); 
+    bodyElem.classList.toggle('overflow-hiden');
     bodyElem.removeEventListener('keydown', onBtnEscape);
   }
 }

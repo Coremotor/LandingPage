@@ -78,6 +78,10 @@
     margin-right: 26px;
     letter-spacing: 1px;
 
+    &:hover {
+      color: $mainTextColorBtn;
+    }
+
     @media(max-width: 1200px) {
       margin-top: -4px;
     }
@@ -93,6 +97,11 @@
   &__btn {
     background-color: $mainBgColorBtn;
     padding: 13px 40px;
+
+    &:hover {
+      color: $secondTextColorBtn;
+      background-color: $secondBgColorBtn;
+    }
 
     @media(max-width: 1024px) {
       width: 26px;

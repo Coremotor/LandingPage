@@ -16,7 +16,14 @@
     font-size: 18px;
     color: $secondTextColor;
     margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: $menuTextColor;
+      border-bottom: 1px solid $menuTextColor;
+    }
   }
+
 
   &-footer:last-child {
     font-size: 18px;
@@ -27,4 +34,5 @@
       font-size: 16px;
     }
   }
+
 }

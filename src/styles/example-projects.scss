@@ -47,6 +47,13 @@
 
   &__btn {
     padding: 20px 72px;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $mainTextColorBtn;
+      background-color: $mainBgColorBtn;
+      border: 1px solid $mainBorderColorBtn;
+    }
 
     @media(max-width: 1200px) {
       padding: 25px 98px;

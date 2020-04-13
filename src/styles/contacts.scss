@@ -20,6 +20,10 @@
     @include bgLeftNoRepeat;
     margin-bottom: 28px;
 
+    &:hover {
+      color: $mainTextColorBtn;
+    }
+
     &::before {
       display: block;
       content: "";
@@ -45,6 +49,10 @@
   &__email {
     display: flex;
     @include bgLeftNoRepeat;
+
+    &:hover {
+      color: $mainTextColorBtn;
+    }
 
     &::before {
       display: block;

@@ -3,6 +3,8 @@
 }
 
 .modal-window-open {
+
+
   .modal-window {
     display: flex;
     flex-direction: column;
@@ -64,6 +66,13 @@
     &__btn-send {
       margin: 0 auto;
       padding: 10px 20px;
+      border: 1px solid transparent;
+
+      &:hover {
+        color: $mainTextColorBtn;
+        background-color: $mainBgColorBtn;
+        border: 1px solid $mainBorderColorBtn;
+      }
     }
   }
 
@@ -78,4 +87,8 @@
 
     z-index: 15;
   }
+}
+
+.overflow-hiden {
+  overflow: hidden; 
 }
