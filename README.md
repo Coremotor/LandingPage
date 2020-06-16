@@ -6,12 +6,12 @@ Create my first landing page :) (graduate work on SkillBox courses)
 
 Use:
 
-HTML5.
-CSS3.
-SASS (https://sass-lang.com/).
-JavaScript.
+1. HTML5.
+2. CSS3.
+3. SASS (https://sass-lang.com/).
+4. JavaScript.
 
-Swiper.js (https://swiperjs.com/).
+5. Swiper.js (https://swiperjs.com/).
 
 Project assembly:
 GULP (https://gulpjs.com/).
